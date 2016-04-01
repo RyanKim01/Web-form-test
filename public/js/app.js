@@ -4,7 +4,8 @@ app.config(['$routeProvider',
       .when('/', {
         templateUrl: 'views/home.html',
         controller: 'HomeCtrl'
-      }).when('/i-129/:section', {
+      }).when('/i-129', {
+				// '/i-129/:section'
         templateUrl: 'views/i-129.html',
         controller: 'I129Ctrl'
       }).when('/awards', {
