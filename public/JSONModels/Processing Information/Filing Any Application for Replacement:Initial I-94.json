@@ -1,0 +1,80 @@
+{
+    "groups": [
+      {
+          "id": "4_4_filing_any_application_for_replacement/initial_I-94",
+          "title": "Filing Any Application for Replacement/Initial I-94",
+          "sections": [
+        {
+            "id": "4_4_section",
+            "fields": [
+                {
+                    "id": "part4_4_subtitle",
+                    "type": "part4_4_subtitle",
+                    "size": {
+                        "width": 100,
+                        "height": 1
+                    }
+                },
+                {
+                    "id": "4_4_yes_no_question",
+                    "title": "",
+                    "info": "Always \"No\"",
+                    "type": "select",
+                    "size": {
+                        "width": 100,
+                        "height": 0.3
+                    },
+                    "validations": {
+                        "required": true
+                    },
+                    "values": [
+                        {
+                            "id": 0,
+                            "title": "Not Selected",
+                            "target": [
+                                {
+                                    "id": "4_4_yes_question",
+                                    "type": "field",
+                                    "action": "hide"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1,
+                            "title": "Yes",
+                            "target": [
+                                {
+                                    "id": "4_4_yes_question",
+                                    "type": "field",
+                                    "action": "show"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "title": "No",
+                            "target": [
+                                {
+                                    "id": "4_4_yes_question",
+                                    "type": "field",
+                                    "action": "disable"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "4_4_yes_question",
+                    "title": "If yes, how many?",
+                    "type": "text",
+                    "size": {
+                        "width": 100,
+                        "height": 1
+                    }
+                }
+            ]
+        }
+      ]
+    }
+    ]
+}

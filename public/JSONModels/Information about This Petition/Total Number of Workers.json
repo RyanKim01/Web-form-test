@@ -1,0 +1,29 @@
+{
+    "groups": [
+        {
+            "id": "2_1_requested_nonimmigrant_classification-5",
+            "title": "Requested Nonimmigrant Classification",
+            "sections": [
+              {
+              "id": "2_5_section",
+              "fields": [
+                {
+                    "id": "2_5_total_number_of_workers",
+                    "title": "5. Total number of workers included in this petition.",
+                    "info": "Always write \"1\". (See instructions relating to when more than one worker can be included.) ",
+                    "type": "text",
+                    "size": {
+                        "width": 50,
+                        "height": 1
+                    },
+                    "validations": {
+                        "required": true,
+                        "min_length": 1
+                    }
+                }
+              ]
+            }
+            ]
+        }
+    ]
+}

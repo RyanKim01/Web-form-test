@@ -1,0 +1,56 @@
+{
+    "groups": [
+        {
+            "id": "5_9_wages",
+            "title": "Wages",
+            "collapsible": false,
+            "sections": [
+                {
+                    "id": "5_9_section",
+                    "fields": [
+                        {
+                            "id": "5_9_wages",
+                            "title": "9. Wages(in dollars):",
+                            "info": "Found on offer letter",
+                            "type": "text",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 1
+                            }
+                        },
+                        {
+                            "id": "5_9_per_hour",
+                            "title": "9. per (Specify hour, week, month, or year)",
+                            "info": "Found on offer letter",
+                            "type": "text",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 1
+                            }
+                        },
+                        {
+                            "id": "part5_biography",
+                            "type": "part5_biography",
+                            "size": {
+                                "width": 100,
+                                "height": 2
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

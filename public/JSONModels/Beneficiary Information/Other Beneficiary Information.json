@@ -1,0 +1,123 @@
+{
+    "groups": [
+        {
+            "id": "3_4_other_information",
+            "title": "4. Ohter Information",
+            "sections": [
+                {
+                    "id": "3_4_section",
+                    "fields": [
+                        {
+                            "id": "3_4_date_of_birth",
+                            "title": "Date of birth",
+                            "type": "date",
+                            "info": "Found on passport",
+                            "size": {
+                                "width": 30,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 1
+                            }
+                        },
+                        {
+                            "id": "3_4_gender",
+                            "title": "Gender",
+                            "type": "select",
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            },
+                            "size": {
+                                "width": 30,
+                                "height": 1
+                            },
+                            "values": [
+                                {
+                                    "id": 0,
+                                    "title": ""
+                                },
+                                {
+                                    "id": 1,
+                                    "title": "Male"
+                                },
+                                {
+                                    "id": 2,
+                                    "title": "Female"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "3_4_social_security_number",
+                            "title": "U.S. Social Security Number (if any)",
+                            "info": "If none, please write \"NONE\"",
+                            "type": "text",
+                            "size": {
+                                "width": 40,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "3_4_alien_registration_number",
+                            "title": "Alien Registration Number (A-Number)",
+                            "type": "text",
+                            "info": "Write \"NONE\". If the number exists, please consult.",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "3_4_country_of_birth",
+                            "title": "Country of Birth",
+                            "type": "text",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "3_4_province_of_birth",
+                            "title": "Province of Birth",
+                            "type": "text",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "3_4_country_of_citizenship",
+                            "title": "Country of Citizenship or Nationality",
+                            "type": "text",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

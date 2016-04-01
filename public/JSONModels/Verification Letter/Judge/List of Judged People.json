@@ -1,0 +1,89 @@
+{
+    "groups": [
+        {
+            "id": "judge_group_5",
+            "title": "Referrer Info And Conclusion Phrase",
+            "collapsible": false,
+            "sections": [
+                {
+                    "id": "judge_section_5",
+                    "fields": [
+                      {
+                          "id": "judge_name_credential_of_past_participant_1",
+                          "title": "1. Name/credential info of participant who is judged",
+                          "type": "text",
+                          "info": "Format: Jordan Hoffmann, Senior scientist at Columbia University",
+                          "size": {
+                              "width": 100,
+                              "height": 1
+                          },
+                          "validations": {
+                              "required": true,
+                              "min_length": 2
+                          }
+                      },
+                      {
+                          "id": "judge_name_credential_of_past_participant_2",
+                          "title": "2. Name/credential info of participant who is judged",
+                          "type": "text",
+                          "info": "Format: Jordan Hoffmann, Senior scientist at Columbia University",
+                          "size": {
+                              "width": 100,
+                              "height": 1
+                          },
+                          "validations": {
+                              "required": true,
+                              "min_length": 2
+                          }
+                      },
+                      {
+                          "id": "judge_name_credential_of_past_participant_3",
+                          "title": "3. Name/credential info of participant who is judged",
+                          "type": "text",
+                          "info": "Format: Jordan Hoffmann, Senior scientist at Columbia University",
+                          "size": {
+                              "width": 100,
+                              "height": 1
+                          },
+                          "validations": {
+                              "required": true,
+                              "min_length": 2
+                          }
+                      },
+                      {
+                          "id": "judge_name_credential_of_past_participant_4",
+                          "title": "4. Name/credential info of participant who is judged",
+                          "type": "text",
+                          "info": "Format: Jordan Hoffmann, Senior scientist at Columbia University",
+                          "size": {
+                              "width": 100,
+                              "height": 1
+                          },
+                          "validations": {
+                              "required": true,
+                              "min_length": 2
+                          }
+                      },
+                      {
+                          "id": "judge_name_credential_of_past_participant_5",
+                          "title": "5. Name/credential info of participant who is judged",
+                          "type": "text",
+                          "info": "Format: Jordan Hoffmann, Senior scientist at Columbia University",
+                          "size": {
+                              "width": 100,
+                              "height": 1
+                          },
+                          "validations": {
+                              "required": true,
+                              "min_length": 2
+                          }
+                      }
+
+
+
+                    ]
+                }
+            ]
+        }
+    ]
+}

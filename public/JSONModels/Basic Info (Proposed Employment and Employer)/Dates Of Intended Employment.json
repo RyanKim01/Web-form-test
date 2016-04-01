@@ -1,0 +1,50 @@
+{
+    "groups": [
+        {
+            "id": "5_11_dates_of_intended_employment",
+            "title": "Dates Of Intended Employment",
+            "collapsible": false,
+            "sections": [
+                {
+                    "id": "5_11_section",
+                    "fields": [
+                        {
+                            "id": "part5_11_subtitle",
+                            "type": "part5_11_subtitle",
+                            "size": {
+                                "width": 100,
+                                "height": 0.4
+                            }
+                        },
+                        {
+                            "id": "5_11_from",
+                            "title": "From:",
+                            "info": "When do you plan to start working?",
+                            "type": "date",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true
+                            }
+                        },
+                        {
+                            "id": "5_11_to",
+                            "title": "To:",
+                            "info": "This value is From date + 1,094 days",
+                            "type": "date",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

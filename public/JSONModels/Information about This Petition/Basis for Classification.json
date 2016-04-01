@@ -1,0 +1,59 @@
+{
+    "groups": [
+        {
+            "id": "2_1_requested_nonimmigrant_classification-2",
+            "title": "Requested Nonimmigrant Classification",
+            "sections": [
+              {
+              "id": "2_2_section",
+              "fields": [
+                {
+                    "id": "2_2_basis_for_classification",
+                    "title": "2. Basis for Classification (Select only one)",
+                    "type": "select",
+                    "info": "Always select \"New employment\" ",
+                    "size": {
+                        "width": 100,
+                        "height": 1
+                    },
+                    "validations": {
+                        "required": true,
+                        "min_length": 2
+                    },
+                    "values": [
+                        {
+                            "id": 0,
+                            "title": "Not Selected"
+                        },
+                        {
+                            "id": 1,
+                            "title": "New employment"
+                        },
+                        {
+                            "id": 2,
+                            "title": "Continuation of previously approved employment without change with the same employer"
+                        },
+                        {
+                            "id": 3,
+                            "title": "Change in previously approved employment"
+                        },
+                        {
+                            "id": 4,
+                            "title": "New concurrent employment"
+                        },
+                        {
+                            "id": 5,
+                            "title": "Change of employer"
+                        },
+                        {
+                            "id": 6,
+                            "title": "Amended petition"
+                        }
+                    ]
+                }
+              ]
+            }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "groups": [
+        {
+            "id": "10_7_group",
+            "title": "Ownership Interest In The Petitioning Organization",
+            "sections": [
+                {
+                    "id": "10_7_section",
+                    "fields": [
+                        {
+                            "id": "10_7_a_ownership",
+                            "title": "7.a. Does any beneficiary in this petition have ownership interest in the petitioning organization?",
+                            "type": "select",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "values": [
+                                {
+                                    "id": 0,
+                                    "title": ""
+                                },
+                                {
+                                    "id": 1,
+                                    "title": "Yes. If yes, please explain in Item Number 7.b."
+                                },
+                                {
+                                    "id": 2,
+                                    "title": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "part10_7_b_biography",
+                            "type": "part10_7_b_biography",
+                            "info": "What is the percentage of your ownership interest in the company that is offering you a job?",
+                            "size": {
+                                "width": 100,
+                                "height": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

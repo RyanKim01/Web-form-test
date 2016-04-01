@@ -1,0 +1,85 @@
+{
+    "groups": [
+        {
+            "id": "5_12_more_employment_and_employer_information",
+            "title": "More Employment and Employer Information",
+            "collapsible": false,
+            "sections": [
+                {
+                    "id": "5_12_section",
+                    "fields": [
+                        {
+                            "id": "5_12_type_of_business",
+                            "title": "12. Type of Business",
+                            "info": "Ex, Software",
+                            "type": "text",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 1
+                            }
+                        },
+                        {
+                            "id": "5_13_year_established",
+                            "title": "13. Year Established",
+                            "info": "Found on Certificate of Incorporation",
+                            "type": "number",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 1
+                            }
+                        },
+                        {
+                            "id": "5_14_current_number_of_employees",
+                            "title": "14. Current Number of Employees in the United States",
+                            "type": "number",
+                            "size": {
+                                "width": 65,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 1
+                            }
+                        },
+                        {
+                            "id": "5_15_gross_annual_income",
+                            "title": "15. Gross Annual Income",
+                            "info": "Always \"0\"",
+                            "type": "number",
+                            "size": {
+                                "width": 35,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 1
+                            }
+                        },
+                        {
+                            "id": "5_16_net_annual_income",
+                            "title": "16. Net Annual Income",
+                            "info": "Always \"0\"",
+                            "type": "number",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

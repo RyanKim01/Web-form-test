@@ -1,0 +1,73 @@
+{
+    "groups": [
+        {
+            "id": "membership_group_3",
+            "title": "List Of Experts For Deciding Membership",
+            "collapsible": false,
+            "sections": [
+                {
+                    "id": "membership_section_3",
+                    "fields": [
+                        {
+                            "id": "membership_describe_experts",
+                            "title": "Description of experts",
+                            "type": "text",
+                            "info": "Describe experts in a phrase. Format: \"Those criteria are evaluated ultimately decided by [Answer Here].\"",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "membership_list_expert_1",
+                            "title": "1. Name and credential of an expert who decides membership",
+                            "type": "text",
+                            "info": "Ex) John Doe, Lead Scientist at Google",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "membership_list_expert_2",
+                            "title": "2. Name and credential of an expert who decides membership",
+                            "type": "text",
+                            "info": "Ex) John Doe, Lead Scientist at Google",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "membership_list_expert_3",
+                            "title": "3. Name and credential of an expert who decides membership",
+                            "type": "text",
+                            "info": "Ex) John Doe, Lead Scientist at Google",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        }
+
+                    ]
+                }
+            ]
+        }
+    ]
+}

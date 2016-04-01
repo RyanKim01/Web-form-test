@@ -1,0 +1,88 @@
+{
+    "groups": [
+        {
+            "id": "membership_group_1",
+            "title": "Membership Basic Info",
+            "collapsible": false,
+            "sections": [
+                {
+                    "id": "membership_section_1",
+                    "fields": [
+                        {
+                            "id": "membership_assiociation_name",
+                            "title": "Name of the association you are in",
+                            "type": "text",
+                            "info": "Ex) American Science Associations",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "membership_since_year",
+                            "title": "Year you got this membership",
+                            "type": "text",
+                            "info": "Since which year do you hold a membership from this associaton? Ex) 2011",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "beneficiary_field",
+                            "title": "Name of the field",
+                            "type": "text",
+                            "info": "Example) Computer Science, Business, Art etc",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "membership_number",
+                            "title": "Number of members in an associaton",
+                            "type": "text",
+                            "info": "Write an approximate number. Ex) 150",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "membership_association_description",
+                            "title": "Description for an associaton",
+                            "type": "text",
+                            "info": "Write in 2-5 sentences to describe an association. Format: [Association Name] is [Answer Here]",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        }
+
+
+                    ]
+                }
+            ]
+        }
+    ]
+}

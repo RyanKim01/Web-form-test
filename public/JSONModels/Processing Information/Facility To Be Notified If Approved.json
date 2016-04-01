@@ -1,0 +1,101 @@
+{
+    "groups": [
+        {
+            "id": "4_processing_information",
+            "title": "Part 4. Processing Information",
+            "collapsible": false,
+            "sections": [
+                {
+                    "id": "4_0_section",
+                    "styles": {
+                        "separator_color": "#FFFFFF"
+                    },
+                    "fields": [
+                        {
+                            "id": "part4_subtitle",
+                            "type": "part4_subtitle",
+                            "size": {
+                                "width": 100,
+                                "height": 0.78
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "4_1_processing_information",
+            "title": "1. Processing Information",
+            "sections": [
+                {
+                    "id": "4_1_a_section",
+                    "fields": [
+                        {
+                            "id": "4_1_a_type_of_office",
+                            "title": "1-a. Type of Office (select only one box)",
+                            "type": "select",
+                            "info": "Always check \"Consulate\"",
+                            "size": {
+                                "width": 40,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true
+                            },
+                            "values": [
+                                {
+                                    "id": 0,
+                                    "title": "Not Selected"
+                                },
+                                {
+                                    "id": 1,
+                                    "title": "Consulate"
+                                },
+                                {
+                                    "id": 2,
+                                    "title": "Pre-flight inspection"
+                                },
+                                {
+                                    "id": 3,
+                                    "title": "Port of Entry"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "4_1_b&c_section",
+                    "fields": [
+                        {
+                            "id": "4_1_b_office_address",
+                            "title": "1-b. Office Address (City)",
+                            "info": "Input city name",
+                            "type": "text",
+                            "size": {
+                                "width": 40,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 1
+                            }
+                        },
+                        {
+                            "id": "4_1_c_state_or_foreign_country",
+                            "title": "1-c. U.S. State or Foreign Country",
+                            "type": "text",
+                            "size": {
+                                "width": 40,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

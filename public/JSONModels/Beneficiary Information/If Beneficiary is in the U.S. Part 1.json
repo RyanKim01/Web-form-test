@@ -1,0 +1,90 @@
+{
+    "groups": [
+        {
+            "id": "3_5_beneficiary_in_us",
+            "title": "5. If the beneficiary is in the United States, complete the following: (All found on I-94)",
+            "sections": [
+                {
+                    "id": "3_5_section",
+                    "fields": [
+                        {
+                            "id": "3_5_date_of_last_arrival",
+                            "title": "Date of Last Arrival",
+                            "type": "date",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true
+                            }
+                        },
+                        {
+                            "id": "3_5_iA-94_number",
+                            "title": "I-94 Arrival-Departure Record Number",
+                            "type": "text",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "3_5_passport_number",
+                            "title": "Passport or Travel Document Number",
+                            "type": "text",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "3_5_date_passport_issued",
+                            "title": "Date Passport or Travel Document Issued",
+                            "type": "date",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true
+                            }
+                        },
+                        {
+                            "id": "3_5_date_passport_expires",
+                            "title": "Date Passport or Travel Document Expires",
+                            "type": "date",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true
+                            }
+                        },
+                        {
+                            "id": "3_5_passport_country_of_issuance",
+                            "title": "Passport or Travel Document Country of Issuance",
+                            "type": "text",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

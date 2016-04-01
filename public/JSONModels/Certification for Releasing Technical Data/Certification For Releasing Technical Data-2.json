@@ -1,0 +1,47 @@
+{
+    "groups": [
+        {
+            "id": "6_2_certification_regarding_ct_td",
+            "title": "Release of Controlled Technology or Technical Data to Foreign Persons in US",
+            "collapsible": false,
+            "sections": [
+                {
+                    "id": "6_2_section",
+                    "fields": [
+                        {
+                            "id": "part6_2_subtitle",
+                            "type": "part6_2_subtitle",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            }
+                        },
+                        {
+                            "id": "6_2_question",
+                            "info": "Select Item 1 or Item 2. DO NOT select \"Yes\" on both questions.",
+                            "type": "select",
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            },
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "values": [
+                                {
+                                    "id": 0,
+                                    "title": "Not Selected"
+                                },
+                                {
+                                    "id": 1,
+                                    "title": "Select"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

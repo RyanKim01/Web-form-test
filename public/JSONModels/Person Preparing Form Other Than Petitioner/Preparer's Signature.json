@@ -1,0 +1,40 @@
+{
+    "groups": [
+        {
+            "id": "8_5_signature",
+            "title": "5. Signature and Date",
+            "sections": [
+                {
+                    "id": "8_5_section",
+                    "fields": [
+                        {
+                            "id": "part8_5_subtitle",
+                            "type": "part8_5_subtitle",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            }
+                        },
+                        {
+                            "id": "part8_5_1_subtitle",
+                            "type": "part8_5_1_subtitle",
+                            "size": {
+                                "width": 100,
+                                "height": 0.6
+                            }
+                        },
+                        {
+                            "id": "8_5_date_of_signature",
+                            "title": "Date of Signature",
+                            "type": "date",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

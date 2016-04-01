@@ -1,0 +1,29 @@
+{
+    "groups": [
+        {
+            "id": "2_1_requested_nonimmigrant_classification-1",
+            "title": "Requested Nonimmigrant Classification",
+            "sections": [
+              {
+              "id": "2_1_section",
+              "fields": [
+                {
+                    "id": "2_1_requested_nonimmigrant_classification_0",
+                    "title": "1. Requested Nonimmigrant Classification (Write classification symbol)",
+                    "info": "Always wrtie \"O-1A\" ",
+                    "type": "text",
+                    "size": {
+                        "width": 68,
+                        "height": 1
+                    },
+                    "validations": {
+                        "required": true,
+                        "min_length": 2
+                    }
+                }
+              ]
+            }
+            ]
+        }
+    ]
+}

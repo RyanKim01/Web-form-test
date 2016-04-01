@@ -1,0 +1,58 @@
+{
+    "groups": [
+        {
+            "id": "2_1_requested_nonimmigrant_classification-4",
+            "title": "Requested Nonimmigrant Classification",
+            "sections": [
+              {
+              "id": "2_4_section",
+              "fields": [
+                {
+                    "id": "2_4_requested_action",
+                    "title": "4. Requested Action (Select only one)",
+                    "type": "select",
+                    "validations": {
+                        "required": true,
+                        "min_length": 2
+                    },
+                    "size": {
+                        "width": 100,
+                        "height": 2
+                    },
+                    "values": [
+                        {
+                            "id": 0,
+                            "title": "Not Selected"
+                        },
+                        {
+                            "id": 1,
+                            "title": "Notify the office in Part 4. so each beneficiary can obtain a visa or be admitted. (NOTE: A petition is not required for E-1, E-2, E-3, H-1B1 Chile/Singapore, or TN visa beneficiaries.)"
+                        },
+                        {
+                            "id": 2,
+                            "title": "Change the status and extend the stay of each beneficiary because the beneficiary(ies) is/are now in the United States in another status (see instructions for limitations). This is available only when you check \"New Employment\" in Item Number 2., above"
+                        },
+                        {
+                            "id": 3,
+                            "title": "Extend the stay of each beneficiary because the beneficiary(ies) now hold(s) this status"
+                        },
+                        {
+                            "id": 4,
+                            "title": "Amend the stay of each beneficiary because the beneficiary(ies) now hold(s) this status"
+                        },
+                        {
+                            "id": 5,
+                            "title": "Extend the status of a nonimmigrant classification based on a free trade agreement. (See Trade Agreement Supplement to Form I-129 for TN and H-1B1.)"
+                        },
+                        {
+                            "id": 6,
+                            "title": "Change status to a nonimmigrant classification based on a free trade agreement. (See Trade Agreement Supplement to Form I-129 for TN and H-1B1.)"
+                        }
+                    ]
+                }
+              ]
+            }
+            ]
+        }
+    ]
+}

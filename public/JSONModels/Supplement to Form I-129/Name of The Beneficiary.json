@@ -1,0 +1,59 @@
+{
+    "groups": [
+        {
+            "id": "10_2_group_name_of_beneficiary",
+            "title": "Name of the Beneficiary",
+            "sections": [
+                {
+                    "id": "10_2_section",
+                    "fields": [
+                        {
+                            "id": "part10_2_subtitle",
+                            "type": "part10_2_subtitle",
+                            "size": {
+                                "width": 100,
+                                "height": 0.7
+                            }
+                        },
+                        {
+                            "id": "10_2_a_part_number",
+                            "title": "2-a. Name of the Beneficiary",
+                            "info": "Found on Passport",
+                            "type": "text",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 1
+                            }
+                        },
+                        {
+                            "id": "part10_2_b_subtitle",
+                            "type": "part10_2_b_subtitle",
+                            "size": {
+                                "width": 100,
+                                "height": 0.4
+                            }
+                        },
+                        {
+                            "id": "10_2_b_number_beneficiaries",
+                            "title": "2-b. Provide the total number of beneficiaries:",
+                            "info": "Always \"NA\"",
+                            "type": "text",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "groups": [
+        {
+            "id": "award_group_6",
+            "title": "List Of Experts",
+            "collapsible": false,
+            "sections": [
+                {
+                    "id": "award_section_6",
+                    "fields": [
+                        {
+                            "id": "award_notable_judge_1",
+                            "title": "1. Write name of a notable judge with credential",
+                            "type": "text",
+                            "info": "Format: Ryan Johnson, CTO of IBM",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "award_notable_judge_2",
+                            "title": "2. Write name of a notable judge with credential",
+                            "type": "text",
+                            "info": "Format: Ryan Johnson, CTO of IBM",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "award_notable_judge_3",
+                            "title": "3. Write name of a notable judge with credential",
+                            "type": "text",
+                            "info": "Format: Ryan Johnson, CTO of IBM",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "award_notable_judge_4",
+                            "title": "4. Write name of a notable judge with credential",
+                            "type": "text",
+                            "info": "Format: Ryan Johnson, CTO of IBM",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "award_notable_judge_5",
+                            "title": "5. Write name of a notable judge with credential",
+                            "type": "text",
+                            "info": "Format: Ryan Johnson, CTO of IBM",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "award_notable_judge_6",
+                            "title": "6. Write name of a notable judge with credential",
+                            "type": "text",
+                            "info": "Format: Ryan Johnson, CTO of IBM",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "award_notable_judge_7",
+                            "title": "7. Write name of a notable judge with credential",
+                            "type": "text",
+                            "info": "Format: Ryan Johnson, CTO of IBM",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "groups": [
+        {
+            "id": "10_3_group_classification_sought",
+            "title": "Classification Sought",
+            "sections": [
+                {
+                    "id": "10_3_section",
+                    "fields": [
+                        {
+                            "id": "10_3_classification_sought",
+                            "title": "3. Classification sought (select only one)",
+                            "info": "Always select O-1 A",
+                            "type": "select",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "values": [
+                                {
+                                    "id": 0,
+                                    "title": ""
+                                },
+                                {
+                                    "id": 1,
+                                    "title": "O-1A  Alien of extraordinary ability in sciences, education, business or athletics (not including the arts, motion picture or television industry)"
+                                },
+                                {
+                                    "id": 2,
+                                    "title": "O-1B  Alien of extraordinary ability in the arts or extraordinary achievement in the motion picture or television industry"
+                                },
+                                {
+                                    "id": 3,
+                                    "title": "O-2  Accompanying alien who is coming to the United States to assist in the performance of the O-1"
+                                },
+                                {
+                                    "id": 4,
+                                    "title": "P-1  Major League Sports"
+                                },
+                                {
+                                    "id": 5,
+                                    "title": "P-1  Athlete or Athletic/Entertainment Group (includes minor league sports not affiliated with Major League Sports)"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "P-1S  Essential Support Personnel for P-1"
+                                },
+                                {
+                                    "id": 7,
+                                    "title": "P-2  Artist or entertainer for reciprocal exchange program"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "P-2S  Essential Support Personnel for P-2"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "P-3  Artist/Entertainer coming to the United States to perform, teach, or coach under a program that is culturally unique"
+                                },
+                                {
+                                    "id": 10,
+                                    "title": "P-3S  Essential Support Personnel for P-3"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

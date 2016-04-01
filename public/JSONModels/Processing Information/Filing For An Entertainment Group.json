@@ -1,0 +1,48 @@
+{
+    "groups": [
+      {
+          "id": "4_10_filing_for_an_entertainment_group",
+          "title": "Filing For An Entertainment Group",
+          "sections": [
+        {
+            "id": "4_10_section",
+            "fields": [
+                {
+                    "id": "part4_10_subtitle",
+                    "type": "part4_10_subtitle",
+                    "size": {
+                        "width": 100,
+                        "height": 0.5
+                    }
+                },
+                {
+                    "id": "4_10_yes_no_question",
+                    "type": "select",
+                    "size": {
+                        "width": 100,
+                        "height": 1
+                    },
+                    "validations": {
+                        "required": true
+                    },
+                    "values": [
+                        {
+                            "id": 0,
+                            "title": "Not Selected"
+                        },
+                        {
+                            "id": 1,
+                            "title": "Yes. If yes, proceed to Part 9. and type or print your explanation."
+                        },
+                        {
+                            "id": 2,
+                            "title": "No"
+                        }
+                    ]
+                }
+            ]
+        }
+      ]
+    }
+    ]
+}

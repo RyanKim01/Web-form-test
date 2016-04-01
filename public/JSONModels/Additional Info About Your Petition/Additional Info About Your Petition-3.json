@@ -1,0 +1,51 @@
+{
+    "groups": [
+        {
+            "id": "9_additional_info_about_your_petition-4",
+            "title": "Part 9. Additional Information About Your Petition For Nonimmigrant Worker",
+            "collapsible": false,
+            "sections": [
+            {
+                          "id": "9_4_section",
+                          "fields": [
+                                     {
+                                     "id": "9_4_page_number",
+                                     "title": "4. Page Number",
+                                     "type": "text",
+                                     "size": {
+                                     "width": 33,
+                                     "height": 1
+                                     }
+                                     },
+                                     {
+                                     "id": "9_4_part_number",
+                                     "title": "4. Part Number",
+                                     "type": "text",
+                                     "size": {
+                                     "width": 33,
+                                     "height": 1
+                                     }
+                                     },
+                                     {
+                                     "id": "9_4_item_number",
+                                     "title": "4. Item Number",
+                                     "type": "text",
+                                     "size": {
+                                     "width": 33,
+                                     "height": 1
+                                     }
+                                     },
+                                     {
+                                     "id": "part9_4_biography",
+                                     "type": "part9_4_biography",
+                                     "size": {
+                                     "width": 100,
+                                     "height": 2
+                                     }
+                                     }
+                                     ]
+                          }
+            ]
+        }
+    ]
+}

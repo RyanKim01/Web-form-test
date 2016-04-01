@@ -1,0 +1,57 @@
+{
+    "groups": [
+        {
+            "id": "5_7_full_time_position",
+            "title": "Full Time Position Information",
+            "collapsible": false,
+            "sections": [
+                {
+                    "id": "5_7_section",
+                    "fields": [
+                        {
+                            "id": "5_7_yes_no_question",
+                            "title": "7. Is this a full-time position?",
+                            "info": "Found on offer letter",
+                            "type": "select",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true
+                            },
+                            "values": [
+                                {
+                                    "id": 0,
+                                    "title": "Not Selected"
+                                },
+                                {
+                                    "id": 1,
+                                    "title": "Yes"
+                                },
+                                {
+                                    "id": 2,
+                                    "title": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5_8_hours_per_week",
+                            "title": "8. If the answer to Item Number 7. is \"No\", how many hours per week for the position?",
+                            "info": "Found on offer letter",
+                            "type": "text",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

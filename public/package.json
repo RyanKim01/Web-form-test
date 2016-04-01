@@ -1,0 +1,11 @@
+{
+  "name": "web-form",
+  "main": "index.js",
+  "dependencies": {
+    "angular-route": "^1.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": ""
+  }
+}

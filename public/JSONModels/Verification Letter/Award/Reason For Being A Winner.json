@@ -1,0 +1,30 @@
+{
+    "groups": [
+        {
+            "id": "award_group_7",
+            "title": "Reason For Being Selected As An Award Winner",
+            "collapsible": false,
+            "sections": [
+                {
+                    "id": "award_section_7",
+                    "fields": [
+                        {
+                            "id": "award_reason_winner",
+                            "title": "Describe why the beneficiary was selected as an Award winner",
+                            "type": "text",
+                            "info": "Answer in 2-5 sentences. Format: Our experts selected [Beneficiary] particularly because of [Answer Here]",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "groups": [
+      {
+          "id": "4_5_filing_for_dependents",
+          "title": "Filing for Dependents",
+          "sections": [
+        {
+            "id": "4_5_section",
+            "fields": [
+                {
+                    "id": "4_5_yes_no_question",
+                    "title": "5. Are you filing any applications for dependents with this petition?",
+                    "type": "select",
+                    "info": "Always \"No\"",
+                    "size": {
+                        "width": 100,
+                        "height": 1
+                    },
+                    "validations": {
+                        "required": true
+                    },
+                    "values": [
+                        {
+                            "id": 0,
+                            "title": "Not Selected",
+                            "target": [
+                                {
+                                    "id": "4_5_yes_question",
+                                    "type": "field",
+                                    "action": "show"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1,
+                            "title": "Yes",
+                            "target": [
+                                {
+                                    "id": "4_5_yes_question",
+                                    "type": "field",
+                                    "action": "show"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "title": "No",
+                            "target": [
+                                {
+                                    "id": "4_5_yes_question",
+                                    "type": "field",
+                                    "action": "show"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "4_5_yes_question",
+                    "title": "If yes, how many?",
+                    "type": "text",
+                    "size": {
+                        "width": 100,
+                        "height": 1
+                    }
+                }
+            ]
+        }
+      ]
+    }
+    ]
+}

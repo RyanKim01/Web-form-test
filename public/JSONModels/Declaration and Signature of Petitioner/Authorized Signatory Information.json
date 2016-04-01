@@ -1,0 +1,55 @@
+{
+    "groups": [
+        {
+            "id": "7_1_name_and_title",
+            "title": "Name and Title of Authorized Signatory",
+            "collapsible": false,
+            "sections": [
+                {
+                    "id": "7_1_section",
+                    "fields": [
+                        {
+                            "id": "7_1_last_name",
+                            "title": "Family Name (last name)",
+                            "type": "text",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "7_1_first_name",
+                            "title": "Given Name (first name)",
+                            "type": "text",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "7_1_title",
+                            "title": "Title",
+                            "type": "text",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

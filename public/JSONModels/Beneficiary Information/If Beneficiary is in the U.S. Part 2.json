@@ -1,0 +1,671 @@
+{
+    "groups": [
+        {
+            "id": "3_5_beneficiary_in_us",
+            "title": "5. If the beneficiary is in the United States, complete the following: (All found on I-94)",
+            "sections": [
+                {
+                    "id": "3_5_section",
+                    "fields": [
+                        {
+                            "id": "3_5_current_nonimmigrant_status",
+                            "title": "Current Nonimmigrant Status",
+                            "type": "select",
+                            "size": {
+                                "width": 60,
+                                "height": 1
+                            },
+                            "values": [
+                                {
+                                    "id": 0,
+                                    "title": "Non Applicable"
+                                },
+                                {
+                                    "id": 1,
+                                    "title": "1B1 - H-1B1 SPECIALITY OCCUPATION"
+                                },
+                                {
+                                    "id": 2,
+                                    "title": "1B2 - H-1B2 DoD SPECIALITY"
+                                },
+                                {
+                                    "id": 3,
+                                    "title": "1B3 - H-1B3 FASHION MODEL"
+                                },
+                                {
+                                    "id": 4,
+                                    "title": "1B4 - H-1B4 UNIQUE PGM ARTIST-ENT"
+                                },
+                                {
+                                    "id": 5,
+                                    "title": "1B5 - H-1B5 ALIEN ATHLETE"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "1BS - SUPPORT PERSON OF H-1"
+                                },
+                                {
+                                    "id": 7,
+                                    "title": "A1 - AMBASSADOR, DIPLOMAT"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "A2 - OTHER DIPLOMATIC OFFICIALS"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "A3 - ATTENDANTS OF A-1, A-2"
+                                },
+                                {
+                                    "id": 10,
+                                    "title": "AS - ASYLUM"
+                                },
+                                {
+                                    "id": 11,
+                                    "title": "ASD - ASYLUM STATUS DENIED"
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "AW - RAW APPLIED FOR AT A PORT"
+                                },
+                                {
+                                    "id": 13,
+                                    "title": " B1 - TEMPORARY VISITOR FOR BUSINESS"
+                                },
+                                {
+                                    "id": 14,
+                                    "title": "B1A - NI PERSNL-DOM SRVANT OF NI EMP"
+                                },
+                                {
+                                    "id": 15,
+                                    "title": "B1B - NI DOMESTIC SERVANT OF USC"
+                                },
+                                {
+                                    "id": 16,
+                                    "title": "B1C - NI EMPLOYED BY FOREIGN AIRLINE"
+                                },
+                                {
+                                    "id": 17,
+                                    "title": "B1D - NI - MISSIONARIES"
+                                },
+                                {
+                                    "id": 18,
+                                    "title": "B2 - TEMPORARY VISITOR FOR PLEASURE"
+                                },
+                                {
+                                    "id": 19,
+                                    "title": "BE - BERING STRAIT ENTRIES"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "C1 - ALIEN IN TRANSIT THROUGH U.S."
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "C2 - ALIEN IN TRANSIT TO UN HQ"
+                                },
+                                {
+                                    "id": 22,
+                                    "title": "C3 - FRN GOV OFF IN TRANSIT THRU US"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "C4 - TRANSIT WITHOUT A VISA"
+                                },
+                                {
+                                    "id": 24,
+                                    "title": "CC - CUBAN MASS MIGRATION PROJECT"
+                                },
+                                {
+                                    "id": 25,
+                                    "title": "CH - PAROLEE (HUMANITARIAN-HQ AUTH)"
+                                },
+                                {
+                                    "id": 26,
+                                    "title": "CP - PAROLEE (PUBLIC INT-HQ AUTH)"
+                                },
+                                {
+                                    "id": 27,
+                                    "title": "CW1 - PRINCIPAL TRANSITIONAL WORKERS"
+                                },
+                                {
+                                    "id": 28,
+                                    "title": "CW2 - DEPENDENT OF CW1"
+                                },
+                                {
+                                    "id": 29,
+                                    "title": "D1 - ALIEN CREW DEPART SAME VESSEL"
+                                },
+                                {
+                                    "id": 30,
+                                    "title": "D2 - ALIEN CREW DEPART OTHER VESSEL"
+                                },
+                                {
+                                    "id": 31,
+                                    "title": "DA - ADVANCE PAROLE (DISTRICT AUTH)"
+                                },
+                                {
+                                    "id": 32,
+                                    "title": "DE - PAROLEE (DEFERRED INSPECTION)"
+                                },
+                                {
+                                    "id": 33,
+                                    "title": "DT - PAROLESS (DISTRICT-POE AUTH)"
+                                },
+                                {
+                                    "id": 34,
+                                    "title": "DX - CREW ARRIVING DETAINED ON SHIP"
+                                },
+                                {
+                                    "id": 35,
+                                    "title": "E1 - TREATY TRADER-SPOUSE-CHILDREN"
+                                },
+                                {
+                                    "id": 36,
+                                    "title": "E2 - TREATY INVESTOR-SPOUSE-CHILD"
+                                },
+                                {
+                                    "id": 37,
+                                    "title": "E2C - CNMI INVESTOR"
+                                },
+                                {
+                                    "id": 38,
+                                    "title": "E3 - AUSTRALIA FREE TRADE AGREEMENT"
+                                },
+                                {
+                                    "id": 39,
+                                    "title": "EAO - EMPLOYMENT ADVISORY OPTION"
+                                },
+                                {
+                                    "id": 40,
+                                    "title": "EWI - ENTRY WITHOUT INSPECTION"
+                                },
+                                {
+                                    "id": 41,
+                                    "title": "X - EOIR"
+                                },
+                                {
+                                    "id": 42,
+                                    "title": "F1 - STUDENT - ACADEMIC"
+                                },
+                                {
+                                    "id": 43,
+                                    "title": "F2 - SPOUSE-CHILD OF F-1"
+                                },
+                                {
+                                    "id": 44,
+                                    "title": "FSM - CFA ADM FED STATES MICRONESIA"
+                                },
+                                {
+                                    "id": 45,
+                                    "title": "FUG - FAMILY UNITY GRANTED"
+                                },
+                                {
+                                    "id": 46,
+                                    "title": "G1 - PRINCIPAL REP. FOREIGN GOVT"
+                                },
+                                {
+                                    "id": 47,
+                                    "title": "G2 - OTHER REP FOREIGN GOVT"
+                                },
+                                {
+                                    "id": 48,
+                                    "title": "G3 - REP NON-RECOGNIZED FOREIGN GOV"
+                                },
+                                {
+                                    "id": 49,
+                                    "title": "G4 - OFFICER-EMPLOYEE INTL. ORG."
+                                },
+                                {
+                                    "id": 50,
+                                    "title": "G5 - ATTENDANTS OF G1, G2, G3, G4"
+                                },
+                                {
+                                    "id": 51,
+                                    "title": "GB - VISITOR WITHOUT A VISA 15 DAYS"
+                                },
+                                {
+                                    "id": 52,
+                                    "title": "GT - VISITOR WITHOUT A VIA 15 DAYS"
+                                },
+                                {
+                                    "id": 53,
+                                    "title": "H1 - ALIEN OF DIST MERIT & ABILITY"
+                                },
+                                {
+                                    "id": 54,
+                                    "title": "H1A - REGISTERED NURSE"
+                                },
+                                {
+                                    "id": 55,
+                                    "title": "H1B - SPECIALITY OCCUPATION"
+                                },
+                                {
+                                    "id": 56,
+                                    "title": "H1C - NURSE RELIEF"
+                                },
+                                {
+                                    "id": 57,
+                                    "title": "H2 - TEMPORARY LABOR CERTIFICATION"
+                                },
+                                {
+                                    "id": 58,
+                                    "title": "H2A - TEMPORARY AGRICULTURAL WORKER"
+                                },
+                                {
+                                    "id": 59,
+                                    "title": "H2B - TEMPORARY NON-AG WORKER"
+                                },
+                                {
+                                    "id": 60,
+                                    "title": "H2R - RET(H2B)WRKR NOT SUBJCT TO CAP"
+                                },
+                                {
+                                    "id": 61,
+                                    "title": "H3 - ALIEN TRAINEE"
+                                },
+                                {
+                                    "id": 62,
+                                    "title": "H3A - TRAINEE"
+                                },
+                                {
+                                    "id": 63,
+                                    "title": "H3B - SPECIAL EDUCATION TRAINING"
+                                },
+                                {
+                                    "id": 64,
+                                    "title": "H4 - SPS OR CHLD OF H1,H2,H3 OR H2R"
+                                },
+                                {
+                                    "id": 65,
+                                    "title": "HSC - FREE TRADE H1B1"
+                                },
+                                {
+                                    "id": 66,
+                                    "title": "I - FOREIGN PRESS"
+                                },
+                                {
+                                    "id": 67,
+                                    "title": "IMM - IMMIGRANT"
+                                },
+                                {
+                                    "id": 68,
+                                    "title": "IN - INDEFINITE PAROLE"
+                                },
+                                {
+                                    "id": 69,
+                                    "title": "J1 - EXCHANGE VISITOR - OTHERS"
+                                },
+                                {
+                                    "id": 70,
+                                    "title": "J1S - EXCHANGE VISITOR - STUDENT"
+                                },
+                                {
+                                    "id": 71,
+                                    "title": "J2 - SPOUSE-CHILD OF J-1"
+                                },
+                                {
+                                    "id": 72,
+                                    "title": "J2S - SPOUSE-CHILD OF J-1S"
+                                },
+                                {
+                                    "id": 73,
+                                    "title": "K1 - ALIEN FIANCE(E) OF USC"
+                                },
+                                {
+                                    "id": 74,
+                                    "title": "K2 - CHILD OF K1"
+                                },
+                                {
+                                    "id": 75,
+                                    "title": "K3 - SPOUSE OF USC"
+                                },
+                                {
+                                    "id": 76,
+                                    "title": "K4 - CHILD OF USC"
+                                },
+                                {
+                                    "id": 77,
+                                    "title": " L1 - INTRA-COMPANY TRANSFEREE"
+                                },
+                                {
+                                    "id": 78,
+                                    "title": "L1A - MANAGER OR EXECUTIVE"
+                                },
+                                {
+                                    "id": 79,
+                                    "title": "L1B - SPECIALIZED KNOWLEDGE ALIEN"
+                                },
+                                {
+                                    "id": 80,
+                                    "title": "L2 - SPOUSE-CHILD OF L-1"
+                                },
+                                {
+                                    "id": 81,
+                                    "title": "LZ - BLANKET L PETITION"
+                                },
+                                {
+                                    "id": 82,
+                                    "title": "M1 - STUDENT - VOCATIONAL-NON-ACAD."
+                                },
+                                {
+                                    "id": 83,
+                                    "title": "M2 - SPOUSE-CHILD OF M-1"
+                                },
+                                {
+                                    "id": 84,
+                                    "title": "MIS -CFA ADM REP MARSHALL ISLANDS"
+                                },
+                                {
+                                    "id": 85,
+                                    "title": "ML - PAROLEE-MEDICAL, LEGAL, HUMAN"
+                                },
+                                {
+                                    "id": 86,
+                                    "title": "N1 - PRINCIPAL REP. OF NATO MEMBER"
+                                },
+                                {
+                                    "id": 87,
+                                    "title": "N2 - OTHER REP. OF NATO MEMBER"
+                                },
+                                {
+                                    "id": 88,
+                                    "title": "N3 - CLERICAL STAFF FOR N-1, N-2"
+                                },
+                                {
+                                    "id": 89,
+                                    "title": "N4 - OFFICIALS OF NATO"
+                                },
+                                {
+                                    "id": 90,
+                                    "title": "N5 - EXPERTS EMPLOYED BY NATO"
+                                },
+                                {
+                                    "id": 91,
+                                    "title": "N6 - CIVILIAN COMPONENT OF NATO"
+                                },
+                                {
+                                    "id": 92,
+                                    "title": "N7 - ATTENDANTS OF N-1 THROUGH N-6"
+                                },
+                                {
+                                    "id": 93,
+                                    "title": "N8 - PARENT OF SPEC IMMIGRANT CHILD"
+                                },
+                                {
+                                    "id": 94,
+                                    "title": "N9 - SPOUSE-CHILD OF N8"
+                                },
+                                {
+                                    "id": 95,
+                                    "title": "O1 - ALIEN W-EXTRAORDINARY ABILITY"
+                                },
+                                {
+                                    "id": 96,
+                                    "title": "O1A - EXTRAORDINARY ALIEN - NON-ARTS"
+                                },
+                                {
+                                    "id": 97,
+                                    "title": "O1B - EXTRAORDINARY ALIEN IN ARTS"
+                                },
+                                {
+                                    "id": 98,
+                                    "title": "O2 - ACCOMPANYING ALEIN TO O1"
+                                },
+                                {
+                                    "id": 99,
+                                    "title": "O3 - SPOUSE-CHILD OF O-1, O-2"
+                                },
+                                {
+                                    "id": 100,
+                                    "title": "OP - PAROLEE (OVERSEAS AUTHORIZED)"
+                                },
+                                {
+                                    "id": 101,
+                                    "title": "P1 - ATHLETE OR ENTERTAINER"
+                                },
+                                {
+                                    "id": 102,
+                                    "title": "P1A - ALIEN WITH ATHLETIC EVENT"
+                                },
+                                {
+                                    "id": 103,
+                                    "title": "P1B - ALIEN WITH ENTERTAINMENT GROUP"
+                                },
+                                {
+                                    "id": 104,
+                                    "title": "P1S - SUPPORT PERSON OF P-1"
+                                },
+                                {
+                                    "id": 105,
+                                    "title": "P2 - EXHANGE ARTIST-ENTERTAINER"
+                                },
+                                {
+                                    "id": 106,
+                                    "title": "P2S - SUPPORT PERSON OF P-2"
+                                },
+                                {
+                                    "id": 107,
+                                    "title": "P3 - UNIQUE PGM ARTIST-ENTERTAINER"
+                                },
+                                {
+                                    "id": 108,
+                                    "title": "P3S - SUPPORT PERSON OF P-3"
+                                },
+                                {
+                                    "id": 109,
+                                    "title": "P4 - SPOUSE-CHILD OF P-1, P-2, P-3"
+                                },
+                                {
+                                    "id": 110,
+                                    "title": "PAL - CFA ADMISSION PALAU"
+                                },
+                                {
+                                    "id": 111,
+                                    "title": "PAR - PAROLEE"
+                                },
+                                {
+                                    "id": 112,
+                                    "title": "PI - PACIFIC ISLANDER"
+                                },
+                                {
+                                    "id": 113,
+                                    "title": "Q1 - INTL CULTURAL XCHG VISITORS"
+                                },
+                                {
+                                    "id": 114,
+                                    "title": "Q2 - IRISH PEACE PROCESS PARTICPNTS"
+                                },
+                                {
+                                    "id": 115,
+                                    "title": "Q3 - SPOUSE-CHILD OF Q2"
+                                },
+                                {
+                                    "id": 116,
+                                    "title": "R1 - RELIGIOUS OCCUPATION"
+                                },
+                                {
+                                    "id": 117,
+                                    "title": "R2 - SPOUSE-CHILD OF R-1"
+                                },
+                                {
+                                    "id": 118,
+                                    "title": "RE - REFUGEE"
+                                },
+                                {
+                                    "id": 119,
+                                    "title": "RE5 - HAITIAN W-GRANTED REFUGEE STAT"
+                                },
+                                {
+                                    "id": 120,
+                                    "title": "RW - RAW APPLIED FOR AT A US CO"
+                                },
+                                {
+                                    "id": 121,
+                                    "title": "S1 - SPECIAL AGRICULTURAL WORKER"
+                                },
+                                {
+                                    "id": 122,
+                                    "title": "S2 - SPECIAL AGRICULTURAL WORKER"
+                                },
+                                {
+                                    "id": 123,
+                                    "title": "S9 - EMERGENCY FARM WORKER"
+                                },
+                                {
+                                    "id": 124,
+                                    "title": "SDF - SUSPECTED DOCUMENT FRAUD"
+                                },
+                                {
+                                    "id": 125,
+                                    "title": "ST - STOWAWAY"
+                                },
+                                {
+                                    "id": 126,
+                                    "title": "T1 - VICTIM OF SEVERE FORM OF TRAFK"
+                                },
+                                {
+                                    "id": 127,
+                                    "title": "T2 - SPOUSE OF T1"
+                                },
+                                {
+                                    "id": 128,
+                                    "title": "T3 - CHILD OF T1"
+                                },
+                                {
+                                    "id": 129,
+                                    "title": "T4 - PARENT OF T1"
+                                },
+                                {
+                                    "id": 130,
+                                    "title": "T5 - UNMARRIED UNDER 18 SIBLG T1 NI"
+                                },
+                                {
+                                    "id": 131,
+                                    "title": "TB - SPOUSE OR CHILD OF CAN. FR"
+                                },
+                                {
+                                    "id": 132,
+                                    "title": "TC - CANADIAN FREE TRADE AGREEMENT"
+                                },
+                                {
+                                    "id": 133,
+                                    "title": "TD - NAFTA DEPENDENT"
+                                },
+                                {
+                                    "id": 134,
+                                    "title": "TN1 - NAFTA PRINCIPAL (CANADA)"
+                                },
+                                {
+                                    "id": 135,
+                                    "title": "TN2 - NAFTA PRINCIPAL (MEXICO)"
+                                },
+                                {
+                                    "id": 136,
+                                    "title": "TWO - TRANSIT WITHOUT A VISA"
+                                },
+                                {
+                                    "id": 137,
+                                    "title": "U1 - VICTIM OF CRIMINAL ACTIVITY"
+                                },
+                                {
+                                    "id": 138,
+                                    "title": "U2 - SPOUSE OF U1"
+                                },
+                                {
+                                    "id": 139,
+                                    "title": "U3 - CHILD OF U1"
+                                },
+                                {
+                                    "id": 140,
+                                    "title": "U4 - PARENT OF U1"
+                                },
+                                {
+                                    "id": 141,
+                                    "title": "U5 - UNMARRIED UNDER 18 SIBLG U1 NI"
+                                },
+                                {
+                                    "id": 142,
+                                    "title": "UN - UNKNOWN"
+                                },
+                                {
+                                    "id": 143,
+                                    "title": "UU - UNKNOWN"
+                                },
+                                {
+                                    "id": 144,
+                                    "title": "V1 - SPOUSE OF LPR"
+                                },
+                                {
+                                    "id": 145,
+                                    "title": "V2 - CHILD OF LPR"
+                                },
+                                {
+                                    "id": 146,
+                                    "title": "V3 - CHILD OF V2"
+                                },
+                                {
+                                    "id": 147,
+                                    "title": "WB - VISITOR FOR BUSINESS - VWPP"
+                                },
+                                {
+                                    "id": 148,
+                                    "title": "WD - WITHDRAWL (I-275)"
+                                },
+                                {
+                                    "id": 149,
+                                    "title": "WI - WITHOUT INSPECTION"
+                                },
+                                {
+                                    "id": 150,
+                                    "title": "WT - VISITOR FOR PLEASURE - VWPP"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "3_5_date_status_expires",
+                            "title": "Date Status Expires or D/S",
+                            "type": "date",
+                            "size": {
+                                "width": 40,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "3_5_sevis_number",
+                            "title": "Student and Exchange Visitor Information System (SEVIS) Number (if any)",
+                            "info": "If none, please write \"NONE\"",
+                            "type": "text",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "3_5_ead_number",
+                            "title": "Employment Authorization Document (EAD) Number (if any)",
+                            "info": "If none, please write \"NONE\"",
+                            "type": "text",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "groups": [
+        {
+            "id": "3_1_entertainment_group",
+            "title": "1. Entertainment Group",
+            "sections": [
+                {
+                    "id": "3_1_section",
+                    "fields": [
+                        {
+                            "id": "3_1_entertainment_group_0",
+                            "title": "If an Entertainment Group, Provide the Group Name",
+                            "info": "Always wrtie \"NA\" ",
+                            "type": "text",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,165 @@
+{
+    "groups": [
+        {
+            "id": "4_1_d_beneficiary_foreign_address",
+            "title": "1-d. Beneficiary's Foreign Address (Non-US address like your home address)",
+            "sections": [
+                {
+                    "id": "4_1_d_section",
+                    "fields": [
+                        {
+                            "id": "4_1_d_street_number_and_name",
+                            "title": "Street Number and Name",
+                            "type": "text",
+                            "size": {
+                                "width": 70,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "4_1_d_address_type",
+                            "title": "Address type",
+                            "info": "What is your house type like?",
+                            "type": "select",
+                            "size": {
+                                "width": 30,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true
+                            },
+                            "values": [
+                                {
+                                    "id": 0,
+                                    "title": "Non Applicable",
+                                    "targets": [
+                                        {
+                                            "id": "4_1_d_address_number",
+                                            "type": "field",
+                                            "action": "hide"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 1,
+                                    "title": "Apartment",
+                                    "targets": [
+                                        {
+                                            "id": "4_1_d_address_number",
+                                            "type": "field",
+                                            "action": "show"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 2,
+                                    "title": "Suite",
+                                    "targets": [
+                                        {
+                                            "id": "4_1_d_address_number",
+                                            "type": "field",
+                                            "action": "show"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 3,
+                                    "title": "Floor",
+                                    "targets": [
+                                        {
+                                            "id": "4_1_d_address_number",
+                                            "type": "field",
+                                            "action": "show"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "4_1_d_address_number",
+                            "title": "Number",
+                            "type": "number",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 1
+                            }
+                        },
+                        {
+                            "id": "4_1_d_city_or_town",
+                            "title": "City or Town",
+                            "type": "text",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "4_1_d_state",
+                            "title": "State",
+                            "type": "text",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "4_1_d_province",
+                            "title": "Province",
+                            "type": "text",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "4_1_d_postal_code",
+                            "title": "Postal Code",
+                            "type": "text",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "4_1_d_country",
+                            "title": "Country",
+                            "type": "text",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "groups": [
+        {
+            "id": "award_group_2",
+            "title": "Award Basic Info",
+            "collapsible": false,
+            "sections": [
+                {
+                    "id": "award_section_2",
+                    "fields": [
+                        {
+                            "id": "award_description_history",
+                            "title": "Description of Award's History",
+                            "type": "text",
+                            "info": "Write about the award's history, scope, and supporting organization in format of \"[Award Name] is [Answer Here]\" ",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "award_description_benefits",
+                            "title": "Description of Award's Benefits",
+                            "type": "text",
+                            "info": "Describe awards, prizes, and other benefits that winners can get in format of \"[Award Name] are [Answer Here]\"",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "award_sponsors",
+                            "title": "List of Sponsors",
+                            "type": "text",
+                            "info": "Write a list of sponsors for this award (Format: \"Award's sponsors include [Answer Here]\")",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

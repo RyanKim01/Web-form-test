@@ -1,0 +1,23 @@
+{
+    "groups": [
+        {
+            "id": "10_4_group_nature_of_event",
+            "title": "Nature Of The Event",
+            "sections": [
+                {
+                    "id": "10_4_section",
+                    "fields": [
+                        {
+                            "id": "part10_4_biography",
+                            "type": "part10_4_biography",
+                            "size": {
+                                "width": 100,
+                                "height": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

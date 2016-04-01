@@ -1,0 +1,55 @@
+{
+    "groups": [
+        {
+            "id": "1_4_contact_information",
+            "title": "4. Contact Information",
+            "sections": [
+                {
+                    "id": "1_4_contact_information-0",
+                    "fields": [
+                        {
+                            "id": "1_4_daytime_telephone_number",
+                            "title": "Daytime Telephone Number",
+                            "info": "What is the phone number for the company that is offering you a job?",
+                            "type": "text",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "1_4_mobile_telephone_number",
+                            "title": "Mobile Telephone Number",
+                            "type": "text",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "1_4_email_address",
+                            "title": "Email Address (if any)",
+                            "type": "text",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

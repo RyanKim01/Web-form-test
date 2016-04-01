@@ -1,0 +1,29 @@
+{
+    "groups": [
+        {
+            "id": "10_1_group_name_of_petitioner",
+            "title": "Name of The Petitioner",
+            "sections": [
+                {
+                    "id": "10_1_section",
+                    "fields": [
+                        {
+                            "id": "10_1_name_of_petitioner",
+                            "title": "1. Name of the Petitioner",
+                            "info": "Found on certificate of incorporation",
+                            "type": "text",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

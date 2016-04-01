@@ -1,0 +1,407 @@
+{
+    "groups": [
+        {
+            "id": "5_3_beneficiary_work_address",
+            "title": "Beneficiary Work Address If Different",
+            "collapsible": false,
+            "sections": [
+                {
+                    "id": "5_3_section",
+                    "fields": [
+                        {
+                            "id": "part5_3_subtitle",
+                            "type": "part5_3_subtitle",
+                            "size": {
+                                "width": 100,
+                                "height": 0.4
+                            }
+                        },
+                        {
+                            "id": "5_3_street_number_and_name",
+                            "title": "Street Number and Name",
+                            "type": "text",
+                            "info": "Always \"NONE\" ",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "5_3_address_type",
+                            "title": "Address type",
+                            "info": "What is your house type like?",
+                            "type": "select",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            },
+                            "values": [
+                                {
+                                    "id": 0,
+                                    "title": "Non Applicable",
+                                    "targets": [
+                                        {
+                                            "id": "5_3_address_number",
+                                            "type": "field",
+                                            "action": "hide"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 1,
+                                    "title": "Apartment",
+                                    "targets": [
+                                        {
+                                            "id": "5_3_address_number",
+                                            "type": "field",
+                                            "action": "show"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 2,
+                                    "title": "Suite",
+                                    "targets": [
+                                        {
+                                            "id": "5_3_address_number",
+                                            "type": "field",
+                                            "action": "show"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 3,
+                                    "title": "Floor",
+                                    "targets": [
+                                        {
+                                            "id": "5_3_address_number",
+                                            "type": "field",
+                                            "action": "show"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5_3_address_number",
+                            "title": "Number",
+                            "info": "Address Number",
+                            "type": "number",
+                            "size": {
+                                "width": 30,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 1
+                            }
+                        },
+                        {
+                            "id": "5_3_city_or_town",
+                            "title": "City or Town",
+                            "info": "Always write \"NA\"",
+                            "type": "text",
+                            "size": {
+                                "width": 40,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "5_3_state",
+                            "title": "State",
+                            "type": "select",
+                            "size": {
+                                "width": 25,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            },
+                            "values": [
+                                {
+                                    "id": 0,
+                                    "title": "Non Applicable"
+                                },
+                                {
+                                    "id": 1,
+                                    "title": "AA"
+                                },
+                                {
+                                    "id": 2,
+                                    "title": "AE"
+                                },
+                                {
+                                    "id": 3,
+                                    "title": "AK"
+                                },
+                                {
+                                    "id": 4,
+                                    "title": "AL"
+                                },
+                                {
+                                    "id": 5,
+                                    "title": "AP"
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "AR"
+                                },
+                                {
+                                    "id": 7,
+                                    "title": "AS"
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "AZ"
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "CA"
+                                },
+                                {
+                                    "id": 10,
+                                    "title": "CO"
+                                },
+                                {
+                                    "id": 11,
+                                    "title": "CT"
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "DC"
+                                },
+                                {
+                                    "id": 13,
+                                    "title": "DE"
+                                },
+                                {
+                                    "id": 14,
+                                    "title": "FL"
+                                },
+                                {
+                                    "id": 15,
+                                    "title": "FM"
+                                },
+                                {
+                                    "id": 16,
+                                    "title": "GA"
+                                },
+                                {
+                                    "id": 17,
+                                    "title": "GU"
+                                },
+                                {
+                                    "id": 18,
+                                    "title": "HI"
+                                },
+                                {
+                                    "id": 19,
+                                    "title": "IA"
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "ID"
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "IL"
+                                },
+                                {
+                                    "id": 22,
+                                    "title": "IN"
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "KS"
+                                },
+                                {
+                                    "id": 24,
+                                    "title": "KY"
+                                },
+                                {
+                                    "id": 25,
+                                    "title": "LA"
+                                },
+                                {
+                                    "id": 26,
+                                    "title": "MA"
+                                },
+                                {
+                                    "id": 27,
+                                    "title": "MD"
+                                },
+                                {
+                                    "id": 28,
+                                    "title": "ME"
+                                },
+                                {
+                                    "id": 29,
+                                    "title": "MH"
+                                },
+                                {
+                                    "id": 30,
+                                    "title": "MI"
+                                },
+                                {
+                                    "id": 31,
+                                    "title": "MN"
+                                },
+                                {
+                                    "id": 32,
+                                    "title": "MO"
+                                },
+                                {
+                                    "id": 33,
+                                    "title": "MP"
+                                },
+                                {
+                                    "id": 34,
+                                    "title": "MS"
+                                },
+                                {
+                                    "id": 35,
+                                    "title": "MT"
+                                },
+                                {
+                                    "id": 36,
+                                    "title": "NC"
+                                },
+                                {
+                                    "id": 37,
+                                    "title": "ND"
+                                },
+                                {
+                                    "id": 38,
+                                    "title": "NE"
+                                },
+                                {
+                                    "id": 39,
+                                    "title": "NH"
+                                },
+                                {
+                                    "id": 40,
+                                    "title": "NJ"
+                                },
+                                {
+                                    "id": 41,
+                                    "title": "NM"
+                                },
+                                {
+                                    "id": 42,
+                                    "title": "NV"
+                                },
+                                {
+                                    "id": 43,
+                                    "title": "NY"
+                                },
+                                {
+                                    "id": 44,
+                                    "title": "OH"
+                                },
+                                {
+                                    "id": 45,
+                                    "title": "OK"
+                                },
+                                {
+                                    "id": 46,
+                                    "title": "OR"
+                                },
+                                {
+                                    "id": 47,
+                                    "title": "PA"
+                                },
+                                {
+                                    "id": 48,
+                                    "title": "PR"
+                                },
+                                {
+                                    "id": 49,
+                                    "title": "PW"
+                                },
+                                {
+                                    "id": 50,
+                                    "title": "RI"
+                                },
+                                {
+                                    "id": 51,
+                                    "title": "SC"
+                                },
+                                {
+                                    "id": 52,
+                                    "title": "SD"
+                                },
+                                {
+                                    "id": 53,
+                                    "title": "TN"
+                                },
+                                {
+                                    "id": 54,
+                                    "title": "TX"
+                                },
+                                {
+                                    "id": 55,
+                                    "title": "UT"
+                                },
+                                {
+                                    "id": 56,
+                                    "title": "VA"
+                                },
+                                {
+                                    "id": 57,
+                                    "title": "VI"
+                                },
+                                {
+                                    "id": 58,
+                                    "title": "VT"
+                                },
+                                {
+                                    "id": 59,
+                                    "title": "WA"
+                                },
+                                {
+                                    "id": 60,
+                                    "title": "WI"
+                                },
+                                {
+                                    "id": 61,
+                                    "title": "WV"
+                                },
+                                {
+                                    "id": 62,
+                                    "title": "WY"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5_3_zipcode",
+                            "title": "Zip Code",
+                            "info": "Always write \"NA\"",
+                            "type": "text",
+                            "size": {
+                                "width": 20,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "groups": [
+      {
+          "id": "4_11_previously_had_J-1_or_J-2",
+          "title": "Previously Had J-1 or J-2",
+          "sections": [
+        {
+            "id": "4_11_section",
+            "fields": [
+                {
+                    "id": "part4_11_a_subtitle",
+                    "type": "part4_11_a_subtitle",
+                    "size": {
+                        "width": 100,
+                        "height": 0.6
+                    }
+                },
+                {
+                    "id": "4_11_a_yes_no_question",
+                    "type": "select",
+                    "size": {
+                        "width": 100,
+                        "height": 1
+                    },
+                    "validations": {
+                        "required": true
+                    },
+                    "values": [
+                        {
+                            "id": 0,
+                            "title": ""
+                        },
+                        {
+                            "id": 1,
+                            "title": "Yes. If yes, proceed to Item Number 11.b."
+                        },
+                        {
+                            "id": 2,
+                            "title": "No"
+                        }
+                    ]
+                },
+                {
+                    "id": "part4_11_b_subtitle",
+                    "type": "part4_11_b_subtitle",
+                    "size": {
+                        "width": 100,
+                        "height": 1
+                    }
+                },
+                {
+                    "id": "4_11_b_question",
+                    "type": "text",
+                    "size": {
+                        "width": 100,
+                        "height": 1
+                    }
+                }
+            ]
+        }
+      ]
+    }
+    ]
+}

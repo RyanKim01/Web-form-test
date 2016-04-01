@@ -1,0 +1,39 @@
+{
+    "groups": [
+        {
+            "id": "10_8_group",
+            "title": "Existence of Appropriate Labor Organization",
+            "sections": [
+                {
+                    "id": "10_8_section",
+                    "fields": [
+                        {
+                            "id": "10_8_labor_organization",
+                            "title": "8. Does an appropriate labor organization exist for the petition?",
+                            "info": "Always select \"No\"",
+                            "type": "select",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "values": [
+                                {
+                                    "id": 0,
+                                    "title": ""
+                                },
+                                {
+                                    "id": 1,
+                                    "title": "Yes"
+                                },
+                                {
+                                    "id": 2,
+                                    "title": "No. If no, proceed to Part 9. and type or print your explanation."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

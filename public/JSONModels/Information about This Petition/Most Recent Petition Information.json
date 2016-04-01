@@ -1,0 +1,37 @@
+{
+    "groups": [
+        {
+            "id": "2_1_requested_nonimmigrant_classification-3",
+            "title": "Requested Nonimmigrant Classification",
+            "sections": [
+              {
+              "id": "2_3_section",
+              "fields": [
+                {
+                    "id": "part2_3_subtitle",
+                    "type": "part2_3_subtitle",
+                    "size": {
+                        "width": 100,
+                        "height": 0.275
+                    }
+                },
+                {
+                    "id": "2_3_most_recent_petition",
+                    "title": "\"NONE\"",
+                    "info": "Always write \"NONE\" ",
+                    "type": "text",
+                    "size": {
+                        "width": 100,
+                        "height": 0.6
+                    },
+                    "validations": {
+                        "required": true,
+                        "min_length": 2
+                    }
+                }
+              ]
+            }
+            ]
+        }
+    ]
+}

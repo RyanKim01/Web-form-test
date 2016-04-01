@@ -1,0 +1,86 @@
+{
+    "groups": [
+        {
+            "id": "membership_group_6",
+            "title": "Referrer Information and Closing",
+            "collapsible": false,
+            "sections": [
+                {
+                    "id": "membership_section_6",
+                    "fields": [
+                        {
+                            "id": "membership_closing",
+                            "title": "Write conclude and close for this letter",
+                            "type": "text",
+                            "info": "Ex) It is my pleasure to write a verification letter to Ryan. Format: Complete Sentences",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "membership_referrer_name",
+                            "title": "Full name of a referrer ",
+                            "type": "text",
+                            "info": "Ex) Ryan David Johnson",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "membership_referrer_title",
+                            "title": "Title of a referrer ",
+                            "type": "text",
+                            "info": "Ex) Head of Department A",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "membership_referrer_email",
+                            "title": "Email of a referrer",
+                            "type": "text",
+                            "info": "Ex) referrer@FoundVisa.com",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "membership_referrer_phone",
+                            "title": "Phone number of a referrer",
+                            "type": "text",
+                            "info": "Ex) (310)-123-1234",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "groups": [
+        {
+            "id": "8_4_preparers_contact_information",
+            "title": "4. Preparer's Contact Information",
+            "sections": [
+                {
+                    "id": "8_4_section",
+                    "fields": [
+                        {
+                            "id": "8_4_daytime",
+                            "title": "Daytime Telephone Number",
+                            "info": "Always write \"NONE\"",
+                            "type": "text",
+                            "size": {
+                                "width": 33,
+                                "height": 1
+                               },
+                               "validations": {
+                               "required": true,
+                               "min_length": 1
+                               }
+                        },
+                        {
+                            "id": "8_4_fax_number",
+                            "title": "Fax Number",
+                            "info": "Always write \"NONE\"",
+                            "type": "text",
+                            "size": {
+                                "width": 33,
+                                "height": 1
+                               },
+                               "validations": {
+                               "required": true,
+                               "min_length": 1
+                               }
+                        },
+                        {
+                            "id": "8_4_email_address",
+                            "title": "Email Address (if any)",
+                            "info": "Always write \"NONE\"",
+                            "type": "text",
+                            "size": {
+                                "width": 33,
+                                "height": 1
+                               },
+                               "validations": {
+                               "required": true,
+                               "min_length": 1
+                               }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "groups": [
+        {
+            "id": "5_basic_information_proposed_employment",
+            "title": "Part 5. Basic Information About the Proposed Employment and Employer",
+            "collapsible": false,
+            "sections": [
+                {
+                    "id": "5_0_section",
+                    "styles": {
+                        "separator_color": "#FFFFFF"
+                    },
+                    "fields": [
+                        {
+                            "id": "part5_subtitle",
+                            "type": "part5_subtitle",
+                            "size": {
+                                "width": 100,
+                                "height": 0.4
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "5_1_job_title",
+            "title": "Job Title and LCA or ETA Case Number",
+            "collapsible": false,
+            "sections": [
+                {
+                    "id": "5_1_section",
+                    "fields": [
+                        {
+                            "id": "5_1_job_title",
+                            "title": "1. Job Title",
+                            "info": "Found on offer letter",
+                            "type": "text",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "5_2_lac_or_eta_case_number",
+                            "title": "2. LCA or ETA Case Number",
+                            "info": "Always \"NONE\" ",
+                            "type": "text",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

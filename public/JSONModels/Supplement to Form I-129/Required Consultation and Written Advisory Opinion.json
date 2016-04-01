@@ -1,0 +1,51 @@
+{
+    "groups": [
+        {
+            "id": "10_9_group",
+            "title": "Required Consultation and Written Advisory Opinion",
+            "sections": [
+                {
+                    "id": "10_9_section",
+                    "fields": [
+                        {
+                            "id": "10_9_required_consultation",
+                            "title": "9. Is the required consultation or written advisory opinion being submitted with this petition?",
+                            "info": "Always select \"N/A\"",
+                            "type": "select",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "values": [
+                                {
+                                    "id": 0,
+                                    "title": ""
+                                },
+                                {
+                                    "id": 1,
+                                    "title": "Yes"
+                                },
+                                {
+                                    "id": 2,
+                                    "title": "No - copy of request attached"
+                                },
+                                {
+                                    "id": 3,
+                                    "title": "N/A"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "part10_9_subtitle",
+                            "type": "part10_9_subtitle",
+                            "size": {
+                                "width": 100,
+                                "height": 0.7
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

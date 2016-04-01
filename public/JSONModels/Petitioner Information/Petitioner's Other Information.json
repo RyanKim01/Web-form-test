@@ -1,0 +1,61 @@
+{
+    "groups": [
+    {
+             "id": "1_5_other_information",
+             "title": "5. Other Information",
+             "sections": [
+                          {
+                          "id": "1_5_other_information-0",
+                          "fields": [
+                                     {
+                                     "id": "1_5_federal_employer_identification_number",
+                                     "title": "Federal Employer Identification Number (FEIN)",
+                                     "type": "text",
+                                     "disabled": false,
+                                     "size": {
+                                     "width": 50,
+                                     "height": 1
+                                     },
+                                     "validations": {
+                                     "required": true,
+                                     "min_length": 2
+                                     }
+                                     },
+                                     {
+                                     "id": "1_5_individual_irs_tax_number",
+                                     "title": "Individual IRS Tax Number",
+                                     "info": "Always write \"NA\"",
+                                     "type": "text",
+                                     "disabled": false,
+                                     "size": {
+                                     "width": 50,
+                                     "height": 1
+                                     },
+                                     "validations": {
+                                     "required": true,
+                                     "min_length": 2
+                                     }
+                                     },
+                                     {
+                                     "id": "1_5_social_security_number",
+                                     "title": "U.S. Social Security Number (if any)",
+                                     "info": "Always write \"NA\"",
+                                     "type": "text",
+                                     "disabled": false,
+                                     "size": {
+                                     "width": 50,
+                                     "height": 1
+                                     },
+                                     "validations": {
+                                     "required": true,
+                                     "min_length": 2
+                                     }
+                                     }
+                                     ]
+                          }
+                          ]
+             }
+
+
+    ]
+}

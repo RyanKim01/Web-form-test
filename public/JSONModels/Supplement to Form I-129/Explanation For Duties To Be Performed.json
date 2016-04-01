@@ -1,0 +1,23 @@
+{
+    "groups": [
+        {
+            "id": "10_5_group",
+            "title": "Explanation For Duties To Be Performed",
+            "sections": [
+                {
+                    "id": "10_5_section",
+                    "fields": [
+                        {
+                            "id": "part10_5_biography",
+                            "type": "part10_5_biography",
+                            "size": {
+                                "width": 100,
+                                "height": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

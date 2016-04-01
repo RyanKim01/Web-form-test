@@ -1,0 +1,70 @@
+{
+    "groups": [
+        {
+            "id": "5_5_working_at_different_location",
+            "title": "Working At Different Location",
+            "collapsible": false,
+            "sections": [
+                {
+                    "id": "5_5_section",
+                    "fields": [
+                        {
+                            "id": "5_5_yes_no_question",
+                            "title": "5. Will the beneficiary(ies) work for you off-site at another company or organization's location?",
+                            "info": "Always \"No\"",
+                            "type": "select",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true
+                            },
+                            "values": [
+                                {
+                                    "id": 0,
+                                    "title": "Not Selected"
+                                },
+                                {
+                                    "id": 1,
+                                    "title": "Yes"
+                                },
+                                {
+                                    "id": 2,
+                                    "title": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5_6_yes_no_question",
+                            "title": "6. Will the beneficiary(ies) work exclusively in the Commonwealth of the Northern Mariana Islands (CNMI)?",
+                            "info": "Always \"No\"",
+                            "type": "select",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true
+                            },
+                            "values": [
+                                {
+                                    "id": 0,
+                                    "title": "Not Selected"
+                                },
+                                {
+                                    "id": 1,
+                                    "title": "Yes"
+                                },
+                                {
+                                    "id": 2,
+                                    "title": "No"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

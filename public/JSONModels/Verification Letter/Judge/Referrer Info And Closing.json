@@ -1,0 +1,72 @@
+{
+    "groups": [
+        {
+            "id": "judge_group_7",
+            "title": "Referrer Info And Conclusion Phrase",
+            "collapsible": false,
+            "sections": [
+                {
+                    "id": "judge_section_7",
+                    "fields": [
+                        {
+                            "id": "judge_conclusion_phrase",
+                            "title": "Write Conclude and close for the letter",
+                            "type": "text",
+                            "info": "Ex) It is my pleasure to write the letter for the beneficiary. Format: Complete Sentences",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "judge_referrer_name",
+                            "title": "Write referrer's full name",
+                            "type": "text",
+                            "info": "Ex) Ryan Davida Johnson",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "judge_referrer_email",
+                            "title": "Write referrer's email address",
+                            "type": "text",
+                            "info": "Ex) JordanHoffmann@FoundVisa.com",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "judge_referrer_phone_number",
+                            "title": "Write referrer's phone number",
+                            "type": "text",
+                            "info": "Ex) (310)-123-1234",
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

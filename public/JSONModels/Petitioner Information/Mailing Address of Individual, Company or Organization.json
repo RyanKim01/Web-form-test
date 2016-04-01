@@ -1,0 +1,1586 @@
+{
+    "groups": [
+        {
+            "id": "1_3_mailing_address_of_individual_company_or_organization",
+            "title": "3. Mailing Address of Individual, Company or Organization",
+            "sections": [
+                {
+                    "id": "section_1_3",
+                    "fields": [
+                        {
+                            "id": "1_3_in_care_of_name",
+                            "title": "In Care Of Name",
+                            "info": "Who, other than yourself, is a good contact person for the company that is offering you a job?",
+                            "type": "text",
+                            "disabled": false,
+                            "size": {
+                                "width": 50,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "1_3_street_number_and_name",
+                            "title": "Street Number and Name",
+                            "info": "What is the mailing address for the company that is offering you a job?",
+                            "type": "text",
+                            "disabled": false,
+                            "size": {
+                                "width": 70,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "1_3_address_type",
+                            "title": "Address type",
+                            "info": "What is your house type like?",
+                            "type": "select",
+                            "size": {
+                                "width": 35,
+                                "height": 1
+                            },
+                            "values": [
+                                {
+                                    "id": 0,
+                                    "title": "Non Applicable",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_address_number",
+                                            "type": "field",
+                                            "action": "hide"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 1,
+                                    "title": "Apartment",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_address_number",
+                                            "type": "field",
+                                            "action": "show"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 2,
+                                    "title": "Suite",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_address_number",
+                                            "type": "field",
+                                            "action": "show"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 3,
+                                    "title": "Floor",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_address_number",
+                                            "type": "field",
+                                            "action": "show"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "1_3_address_number",
+                            "title": "Number",
+                            "info": "Address Number",
+                            "type": "number",
+                            "disabled": false,
+                            "size": {
+                                "width": 30,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "1_3_city_or_town",
+                            "title": "City or Town",
+                            "type": "name",
+                            "disabled": false,
+                            "size": {
+                                "width": 35,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 3
+                            }
+                        },
+                        {
+                            "id": "1_3_state",
+                            "title": "State",
+                            "type": "select",
+                            "size": {
+                                "width": 25,
+                                "height": 1
+                            },
+                            "values": [
+                                {
+                                    "id": 0,
+                                    "title": "Not Applicable",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "enable"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "enable"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "clear"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "enable"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 1,
+                                    "title": "AA",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 2,
+                                    "title": "AE",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 3,
+                                    "title": "AK",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 4,
+                                    "title": "AL",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 5,
+                                    "title": "AP",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 6,
+                                    "title": "AR",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 7,
+                                    "title": "AS",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 8,
+                                    "title": "AZ",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 9,
+                                    "title": "CA",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 10,
+                                    "title": "CO",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 11,
+                                    "title": "CT",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 12,
+                                    "title": "DC",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 13,
+                                    "title": "DE",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 14,
+                                    "title": "FL",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 15,
+                                    "title": "FM",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 16,
+                                    "title": "GA",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 17,
+                                    "title": "GU",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 18,
+                                    "title": "HI",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 19,
+                                    "title": "IA",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 20,
+                                    "title": "ID",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 21,
+                                    "title": "IL",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 22,
+                                    "title": "IN",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 23,
+                                    "title": "KS",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 24,
+                                    "title": "KY",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 25,
+                                    "title": "LA",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 26,
+                                    "title": "MA",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 27,
+                                    "title": "MD",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 28,
+                                    "title": "ME",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 29,
+                                    "title": "MH",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 30,
+                                    "title": "MI",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 31,
+                                    "title": "MN",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 32,
+                                    "title": "MO",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 33,
+                                    "title": "MP",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 34,
+                                    "title": "MS",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 35,
+                                    "title": "MT",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 36,
+                                    "title": "NC",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 37,
+                                    "title": "ND",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 38,
+                                    "title": "NE",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 39,
+                                    "title": "NH",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 40,
+                                    "title": "NJ",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 41,
+                                    "title": "NM",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 42,
+                                    "title": "NV",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 43,
+                                    "title": "NY",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 44,
+                                    "title": "OH",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 45,
+                                    "title": "OK",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 46,
+                                    "title": "OR",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 47,
+                                    "title": "PA",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 48,
+                                    "title": "PR",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 49,
+                                    "title": "PW",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 50,
+                                    "title": "RI",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 51,
+                                    "title": "SC",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 52,
+                                    "title": "SD",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 53,
+                                    "title": "TN",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 54,
+                                    "title": "TX",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 55,
+                                    "title": "UT",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 56,
+                                    "title": "VA",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 57,
+                                    "title": "VI",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 58,
+                                    "title": "VT",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 59,
+                                    "title": "WA",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 60,
+                                    "title": "WI",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 61,
+                                    "title": "WV",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 62,
+                                    "title": "WY",
+                                    "targets": [
+                                        {
+                                            "id": "1_3_province",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_postal_code",
+                                            "type": "field",
+                                            "action": "hide"
+                                        },
+                                        {
+                                            "id": "1_3_country",
+                                            "type": "field",
+                                            "action": "update",
+                                            "target_value": "USA"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "1_3_zip_code",
+                            "title": "Zip Code",
+                            "type": "text",
+                            "disabled": false,
+                            "size": {
+                                "width": 35,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 5
+                            }
+                        },
+                        {
+                            "id": "1_3_province",
+                            "title": "Province",
+                            "type": "name",
+                            "disabled": false,
+                            "size": {
+                                "width": 35,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "1_3_postal_code",
+                            "title": "Postal Code",
+                            "type": "text",
+                            "disabled": false,
+                            "size": {
+                                "width": 35,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        },
+                        {
+                            "id": "1_3_country",
+                            "title": "Country",
+                            "type": "text",
+                            "size": {
+                                "width": 35,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

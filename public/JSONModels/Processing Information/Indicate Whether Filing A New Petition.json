@@ -1,0 +1,102 @@
+{
+    "groups": [
+      {
+          "id": "4_8_indicate_whether_filing_a_new_petition",
+          "title": "Indicate Whether Filing A New Petition",
+          "sections": [
+        {
+            "id": "4_8_section",
+            "fields": [
+                {
+                    "id": "4_8_yes_no_question",
+                    "title": "8. Did you indicate you were filing a new petition in Part 2?",
+                    "info": "Have you applied for O1 before?",
+                    "type": "select",
+                    "size": {
+                        "width": 100,
+                        "height": 1
+                    },
+                    "validations": {
+                        "required": true
+                    },
+                    "values": [
+                        {
+                            "id": 0,
+                            "title": "Not Selected"
+                        },
+                        {
+                            "id": 1,
+                            "title": "Yes. If yes, answer the questions(8-a & 8-b) below."
+                        },
+                        {
+                            "id": 2,
+                            "title": "No. If no, proceed to Item Number 9."
+                        }
+                    ]
+                },
+                {
+                    "id": "part4_8_a_subtitle",
+                    "type": "part4_8_a_subtitle",
+                    "size": {
+                        "width": 100,
+                        "height": 0.6
+                    }
+                },
+                {
+                    "id": "4_8_a_question",
+                    "type": "select",
+                    "size": {
+                        "width": 100,
+                        "height": 1
+                    },
+                    "values": [
+                        {
+                            "id": 0,
+                            "title": "Not Selected"
+                        },
+                        {
+                            "id": 1,
+                            "title": "Yes. If yes, proceed to Part 9. and type or print your explanation."
+                        },
+                        {
+                            "id": 2,
+                            "title": "No"
+                        }
+                    ]
+                },
+                {
+                    "id": "part4_8_b_subtitle",
+                    "type": "part4_8_b_subtitle",
+                    "size": {
+                        "width": 100,
+                        "height": 0.6
+                    }
+                },
+                {
+                    "id": "4_8_b_question",
+                    "type": "select",
+                    "size": {
+                        "width": 100,
+                        "height": 1
+                    },
+                    "values": [
+                        {
+                            "id": 0,
+                            "title": "Not Selected"
+                        },
+                        {
+                            "id": 1,
+                            "title": "Yes. If yes, proceed to Part 9. and type or print your explanation."
+                        },
+                        {
+                            "id": 2,
+                            "title": "No"
+                        }
+                    ]
+                }
+            ]
+        }
+      ]
+    }
+    ]
+}

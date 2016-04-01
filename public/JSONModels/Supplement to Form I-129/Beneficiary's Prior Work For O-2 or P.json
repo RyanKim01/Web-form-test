@@ -1,0 +1,23 @@
+{
+    "groups": [
+        {
+            "id": "10_6_group",
+            "title": "Beneficiary's Prior Work For O-2 or P",
+            "sections": [
+                {
+                    "id": "10_6_section",
+                    "fields": [
+                        {
+                            "id": "part10_6_biography",
+                            "type": "part10_6_biography",
+                            "size": {
+                                "width": 100,
+                                "height": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
