@@ -6,7 +6,8 @@ app.controller('I129Ctrl', ['$scope', '$http', 'JSONModelsService',
 		$scope.group = {};
 		$scope.sections = [];
 
-		JSONModelsService.get([section, 'A-Number'])
+		//below is basically equivalent to routing
+		JSONModelsService.get(['Beneficiary Information', 'Name of Beneficiary'])
 			.then(function (response) {
 				console.log(response);
 				$scope.group = response.data.groups[0];

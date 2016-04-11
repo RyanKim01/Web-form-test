@@ -110,7 +110,6 @@ app.factory('FormDataService', [function () {
 
 app.controller('MainController', ['$scope', '$http', 'debounce', 'FormDataService',
   function ($scope, $http, debounce, FormDataService) {
-
       $scope.step = 1;
 
       // $scope.livesInEgypt;
