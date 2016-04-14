@@ -3,8 +3,9 @@ app.controller('I129Ctrl', ['$scope', '$http', 'JSONModelsService',
 
 		var formData = {};
 
-		$scope.group = {};
+		$scope.groups = [];
 		$scope.sections = [];
+		$scope.fields = [];
 
 		//below is basically equivalent to routing
 		JSONModelsService.get(['test', 'Valid Passport'])
@@ -12,7 +13,8 @@ app.controller('I129Ctrl', ['$scope', '$http', 'JSONModelsService',
 				console.log(response);
 				// $scope.group = response.data.groups[0];
 				$scope.groups = response.data.groups;
-				$scope.sections = $scope.group.sections;
+				$scope.sections = $scope.groups.sections;
+				$scope.fields = $scope.groups.sections.fields;
 			});
 
 		// var original = {

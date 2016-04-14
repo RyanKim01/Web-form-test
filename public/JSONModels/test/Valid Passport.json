@@ -92,6 +92,33 @@
                                     "title": "No"
                                 }
                             ]
+                        },
+												{
+                            "id": "4_6_yes_no_question",
+                            "title": "6. Is any beneficiary in this petition in removal proceedings?",
+                            "type": "checkbox",
+                            "info": "If yes, proceed to Part 9. and list the beneficiary's(ies) name(s).",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true
+                            },
+                            "values": [
+                                {
+                                    "id": 0,
+                                    "title": "Not Selected"
+                                },
+                                {
+                                    "id": 1,
+                                    "title": "Yes"
+                                },
+                                {
+                                    "id": 2,
+                                    "title": "No"
+                                }
+                            ]
                         }
                     ]
                 }

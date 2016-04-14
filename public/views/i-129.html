@@ -13,7 +13,7 @@
 			<div class="" ng-repeat="field in section.fields">
 				<p ng-bind="field.id"></p>
 				<!-- textfield -->
-				<div class="form-group" ng-class="{ 'has-error': form.$submitted && form['{{field.id}}'].$invalid }" ng-if="field.type === 'text'">
+				<div class="form-group" ng-class="{ 'has-error': form.$submitted && form[field.id].$invalid }" ng-if="field.type === 'text'">
 					<label for="{{field.id}}">{{field.title.substr(field.title.indexOf('.') + 2)}}</label>
 					<input type="text" class="form-control" id="{{field.id}}" name="{{field.id}}" ng-model="formData[field.id]" ng-required="field.validations.required" ng-minlength="field.validations.min_length">
 
@@ -25,16 +25,15 @@
 					<p class="form-group-note" ng-if="field.info" ng-bind="field.info"></p>
 				</div>
 
-				<div class="form-group" ng-class="{ 'has-error': form.$submitted && form['{{field.id}}'].$invalid }" ng-if="field.type === 'select'">
-					<select>
-						<div class="" ng-repeat="value in field.values">
-							<p ng-bind="value.title"></p>
-					  	<option value="value.title"></option>
-						</div>
-					</select>
+				<!-- select -->
+				<div class="form-group" ng-class="{ 'has-error': form.$submitted && form[field.id].$invalid }" ng-if="field.type === 'select'">
+						<select ng-model="valueSelected" ng-options="value as value.title for value in field.values"></select>
 				</div>
 
-			</div>
+				<!-- Check box -->
+				<div class="form-group" ng-class="{ 'has-error': form.$submitted && form[field.id].$invalid }" ng-if="field.type === 'checkbox'">
+					<input type="checkbox" name="vehicle1" value="Bike" ng-options="value as value.title for value in field.values"><br>
+				</div>
 
 		</div>
 	</div>
