@@ -4,12 +4,15 @@
 			{{form}}
 		</pre>
 
+
+
+	<div class="" ng-repeat="group in groups">
 		<h2 ng-bind="group.title"></h2>
-
-		<div class="" ng-repeat="section in sections">
-
+		<div class="" ng-repeat="section in group.sections">
+			<p ng-bind="section.id"></p>
 			<div class="" ng-repeat="field in section.fields">
-
+				<p ng-bind="field.id"></p>
+				<!-- textfield -->
 				<div class="form-group" ng-class="{ 'has-error': form.$submitted && form['{{field.id}}'].$invalid }" ng-if="field.type === 'text'">
 					<label for="{{field.id}}">{{field.title.substr(field.title.indexOf('.') + 2)}}</label>
 					<input type="text" class="form-control" id="{{field.id}}" name="{{field.id}}" ng-model="formData[field.id]" ng-required="field.validations.required" ng-minlength="field.validations.min_length">
@@ -21,10 +24,20 @@
 
 					<p class="form-group-note" ng-if="field.info" ng-bind="field.info"></p>
 				</div>
+
+				<div class="form-group" ng-class="{ 'has-error': form.$submitted && form['{{field.id}}'].$invalid }" ng-if="field.type === 'select'">
+					<select>
+						<div class="" ng-repeat="value in field.values">
+							<p ng-bind="value.title"></p>
+					  	<option value="value.title"></option>
+						</div>
+					</select>
+				</div>
+
 			</div>
 
 		</div>
-
+	</div>
 		<button type="submit" class="btn btn-success">Submit</button>
 	</form>
 </div>

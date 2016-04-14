@@ -1,0 +1,161 @@
+{
+    "groups": [
+        {
+            "id": "4_2_valid_passport",
+            "title": "Valid Passport",
+            "sections": [
+                {
+                    "id": "4_2_section",
+                    "fields": [
+                        {
+                            "id": "part4_2_subtitle",
+                            "type": "part4_2_subtitle",
+                            "size": {
+                                "width": 100,
+                                "height": 0.5
+                            }
+                        },
+												{
+                            "id": "3_1_entertainment_group_0",
+                            "title": "If an Entertainment Group, Provide the Group Name",
+                            "info": "Always wrtie \"NA\" ",
+                            "type": "text",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true,
+                                "min_length": 1
+                            }
+                        },
+                        {
+                            "id": "4_2_yes_no_questions",
+                            "type": "select",
+                            "info": "Always select \"Yes\"",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true
+                            },
+                            "values": [
+                                {
+                                    "id": 0,
+                                    "title": "Not Selected"
+                                },
+                                {
+                                    "id": 1,
+                                    "title": "Yes"
+                                },
+                                {
+                                    "id": 2,
+                                    "title": "No"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "4_6_removal_proceeding",
+            "title": "Removal Proceeding",
+            "sections": [
+                {
+                    "id": "4_6_section",
+                    "fields": [
+                        {
+                            "id": "4_6_yes_no_question",
+                            "title": "6. Is any beneficiary in this petition in removal proceedings?",
+                            "type": "select",
+                            "info": "If yes, proceed to Part 9. and list the beneficiary's(ies) name(s).",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true
+                            },
+                            "values": [
+                                {
+                                    "id": 0,
+                                    "title": "Not Selected"
+                                },
+                                {
+                                    "id": 1,
+                                    "title": "Yes"
+                                },
+                                {
+                                    "id": 2,
+                                    "title": "No"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "4_11_previously_had_J-1_or_J-2",
+            "title": "Previously Had J-1 or J-2",
+            "sections": [
+                {
+                    "id": "4_11_section",
+                    "fields": [
+                        {
+                            "id": "part4_11_a_subtitle",
+                            "type": "part4_11_a_subtitle",
+                            "size": {
+                                "width": 100,
+                                "height": 0.6
+                            }
+                        },
+                        {
+                            "id": "4_11_a_yes_no_question",
+                            "type": "select",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            },
+                            "validations": {
+                                "required": true
+                            },
+                            "values": [
+                                {
+                                    "id": 0,
+                                    "title": ""
+                                },
+                                {
+                                    "id": 1,
+                                    "title": "Yes. If yes, proceed to Item Number 11.b."
+                                },
+                                {
+                                    "id": 2,
+                                    "title": "No"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "part4_11_b_subtitle",
+                            "type": "part4_11_b_subtitle",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            }
+                        },
+                        {
+                            "id": "4_11_b_question",
+                            "type": "text",
+                            "size": {
+                                "width": 100,
+                                "height": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
