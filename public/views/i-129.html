@@ -2,41 +2,92 @@
 	<form name="form" novalidate>
 		<pre>
 			{{form}}
+			{{formData}}
 		</pre>
 
 
 
-	<div class="" ng-repeat="group in groups">
-		<h2 ng-bind="group.title"></h2>
-		<div class="" ng-repeat="section in group.sections">
-			<p ng-bind="section.id"></p>
-			<div class="" ng-repeat="field in section.fields">
-				<p ng-bind="field.id"></p>
-				<!-- textfield -->
-				<div class="form-group" ng-class="{ 'has-error': form.$submitted && form[field.id].$invalid }" ng-if="field.type === 'text'">
-					<label for="{{field.id}}">{{field.title.substr(field.title.indexOf('.') + 2)}}</label>
-					<input type="text" class="form-control" id="{{field.id}}" name="{{field.id}}" ng-model="formData[field.id]" ng-required="field.validations.required" ng-minlength="field.validations.min_length">
+		<div class="" ng-repeat="group in groups">
+			<h2 ng-bind="group.title"></h2>
+			<div class="" ng-repeat="section in group.sections">
+				<!-- <p ng-bind="section.id"></p> -->
+				<div class="" ng-repeat="field in section.fields">
+					<!-- <p ng-bind="field.id"></p> -->
 
-					<div ng-show="form.$submitted" ng-cloack>
-						<span class="help-block" ng-show="form['{{field.id}}'].$error.required" ng-if="field.validations.required">Please enter a value, this field is required</span>
-						<span class="help-block" ng-show="form['{{field.id}}'].$error.minlength" ng-if="field.validations.min_length">Please enter a value of at least {{field.validations.min_length}} characters</span>
+					<!-- textfield -->
+					<div class="form-group" ng-class="{ 'has-error': form.$submitted && form[field.id].$invalid }" ng-if="field.type === 'text'">
+						<!-- <label for="{{field.id}}">{{field.title.substr(field.title.indexOf('.') + 2)}}</label><br> -->
+						<label for="{{field.id}}">{{field.title}}</label>
+						<br>
+						<input type="text" class="form-control" id="{{field.id}}" name="{{field.id}}" ng-model="formData[field.id]" ng-required="field.validations.required" ng-minlength="field.validations.min_length">
+						<p class="form-group-note" ng-if="field.info" ng-bind="field.info"></p>
+
+						<div ng-show="form.$submitted" ng-cloack>
+							<span class="help-block" ng-show="form['{{field.id}}'].$error.required" ng-if="field.validations.required">Please enter a value, this field is required</span>
+							<span class="help-block" ng-show="form['{{field.id}}'].$error.minlength" ng-if="field.validations.min_length">Please enter a value of at least {{field.validations.min_length}} characters</span>
+						</div>
 					</div>
 
-					<p class="form-group-note" ng-if="field.info" ng-bind="field.info"></p>
-				</div>
+					<!-- number -->
+					<div class="form-group" ng-class="{ 'has-error': form.$submitted && form[field.id].$invalid }" ng-if="field.type === 'number'">
+						<label for="{{field.id}}">{{field.title}}</label>
+						<br>
+						<input type="number" class="form-control" id="{{field.id}}" name="{{field.id}}" ng-model="formData[field.id]" ng-required="field.validations.required" ng-minlength="field.validations.min_length">
+						<p class="form-group-note" ng-if="field.info" ng-bind="field.info"></p>
 
-				<!-- select -->
-				<div class="form-group" ng-class="{ 'has-error': form.$submitted && form[field.id].$invalid }" ng-if="field.type === 'select'">
+						<div ng-show="form.$submitted" ng-cloack>
+							<span class="help-block" ng-show="form['{{field.id}}'].$error.required" ng-if="field.validations.required">Please enter a value, this field is required</span>
+							<span class="help-block" ng-show="form['{{field.id}}'].$error.minlength" ng-if="field.validations.min_length">Please enter a value of at least {{field.validations.min_length}} characters</span>
+						</div>
+					</div>
+
+					<!-- select -->
+					<div class="form-group" ng-class="{ 'has-error': form.$submitted && form[field.id].$invalid }" ng-if="field.type === 'select'">
+						<!-- <label for="{{field.id}}">{{field.title.substr(field.title.indexOf('.') + 2)}}</label><br> -->
+						<label for="{{field.id}}">{{field.title}}</label>
+						<br>
 						<select ng-model="valueSelected" ng-options="value as value.title for value in field.values"></select>
-				</div>
+						<p class="form-group-note" ng-if="field.info" ng-bind="field.info"></p>
 
-				<!-- Check box -->
-				<div class="form-group" ng-class="{ 'has-error': form.$submitted && form[field.id].$invalid }" ng-if="field.type === 'checkbox'">
-					<input type="checkbox" name="vehicle1" value="Bike" ng-options="value as value.title for value in field.values"><br>
-				</div>
+						<div ng-show="form.$submitted" ng-cloack>
+							<span class="help-block" ng-show="form['{{field.id}}'].$error.required" ng-if="field.validations.required">Please enter a value, this field is required</span>
+						</div>
+					</div>
 
+					<!-- Check box -->
+					<div class="form-group" ng-class="{ 'has-error': form.$submitted && form[field.id].$invalid }" ng-if="field.type === 'checkbox'">
+						<label for="{{field.id}}">{{field.title}}</label>
+						<br>
+						<input type="checkbox" name="{{field.id}}" value="{{field.id}}" ng-options="value as value.title for value in field.values">
+						<p class="form-group-note" ng-if="field.info" ng-bind="field.info"></p>
+
+						<div ng-show="form.$submitted" ng-cloack>
+							<span class="help-block" ng-show="form['{{field.id}}'].$error.required" ng-if="field.validations.required">Please enter a value, this field is required</span>
+						</div>
+					</div>
+
+					<!-- date -->
+					<div class="form-group" ng-class="{ 'has-error': form.$submitted && form[field.id].$invalid }" ng-if="field.type === 'date'">
+						<!-- <label for="{{field.id}}">{{field.title.substr(field.title.indexOf('.') + 2)}}</label> -->
+						<label for="{{field.id}}">{{field.title}}</label>
+						<br>
+						<input type="date" class="form-control" id="{{field.id}}" name="{{field.id}}" ng-model="formData[field.id]" ng-required="field.validations.required" ng-minlength="field.validations.min_length">
+						<p class="form-group-note" ng-if="field.info" ng-bind="field.info"></p>
+
+						<div ng-show="form.$submitted" ng-cloack>
+							<span class="help-block" ng-show="form['{{field.id}}'].$error.required" ng-if="field.validations.required">Please enter a value, this field is required</span>
+						</div>
+					</div>
+
+					<!-- subtitle -->
+					<!-- <div class="form-group" ng-class="{ 'has-error': form.$submitted && form[field.id].$invalid }" ng-if="field.type === 'subtitle'">
+						<label for="{{field.id}}">{{field.title.substr(field.title.indexOf('.') + 2)}}</label>
+					</div> -->
+
+				</div>
+			</div>
 		</div>
-	</div>
 		<button type="submit" class="btn btn-success">Submit</button>
 	</form>
+
 </div>
