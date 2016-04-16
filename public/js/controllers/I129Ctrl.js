@@ -1,92 +1,36 @@
-app.controller('I129Ctrl', ['$scope', '$http', 'JSONModelsService',
-	function ($scope, $http, JSONModelsService) {
+app.controller('I129Ctrl', ['$scope', '$http', 'JSONModelsService', '$routeParams', '$location',
+	function ($scope, $http, JSONModelsService, $routeParams, $location) {
 
 		var formData = {};
+		var baseUrl = '/i-129/';
 
+		$scope.group = [];
 		$scope.groups = [];
 		$scope.sections = [];
 		$scope.fields = [];
 
+
+		console.log($location)
+
+		$scope.respone = [];
+
+		function updateUI() {
+			$scope.group = $scope.response.data.groups[$routeParams.section - 1];
+		}
+
 		//below is basically equivalent to routing
 		JSONModelsService.get(['test', 'Valid Passport'])
-			.then(function (response) {
-				console.log(response);
-				// $scope.group = response.data.groups[0];
-				$scope.groups = response.data.groups;
-				$scope.sections = $scope.groups.sections;
-				$scope.fields = $scope.groups.sections.fields;
-			});
+		.then(function (response) {
+			$scope.response = response;
+			updateUI();
+		});
 
-		// var original = {
-		// 	"groups":[
-		// 		{
-		// 			"id":"9_additional_info_about_your_petition-2",
-		// 			"title":"Part 9. Additional Information About Your Petition For Nonimmigrant Worker",
-		// 			"sections":[
-		// 				{
-		// 					"id":"9_2_section",
-		// 					"fields":[
-		// 						{
-		// 							"id":"9_2_page_number",
-		// 							"title":"2. Page Number",
-		// 							"info":"Always \"27\"",
-		// 							"type":"text",
-		// 							"size":{
-		// 								"width":33,
-		// 								"height":1
-		// 							},
-		// 							"validations":{
-		// 								"required":true,
-		// 								"min_length":2
-		// 							}
-		// 						},
-		// 						{
-		// 							"id":"9_2_part_number",
-		// 							"title":"2. Part Number",
-		// 							"info":"Always \"1\"",
-		// 							"type":"text",
-		// 							"size":{
-		// 								"width":33,
-		// 								"height":1
-		// 							},
-		// 							"validations":{
-		// 								"required":true,
-		// 								"min_length":1
-		// 							}
-		// 						},
-		// 						{
-		// 							"id":"9_2_item_number",
-		// 							"title":"2. Item Number",
-		// 							"info":"Always \"8\"",
-		// 							"type":"text",
-		// 							"size":{
-		// 								"width":33,
-		// 								"height":1
-		// 							},
-		// 							"validations":{
-		// 								"required":true,
-		// 								"min_length":1
-		// 							}
-		// 						},
-		// 						{
-		// 							"id":"part9_2_biography",
-		// 							"type":"part9_2_biography",
-		// 							"info":"Because no appropriate labor organization exists, we request a decision based on the record and response(s) to Requests for Evidence, if any",
-		// 							"size":{
-		// 								"width":100,
-		// 								"height":2
-		// 							}
-		// 						}
-		// 					]
-		// 				}
-		// 			]
-		// 		}
-		// 	]
-		// };
-		//
-		// $scope.group = original.groups[0];
-		//
-		// $scope.sections = $scope.group.sections;
+		$scope.nextStep = function () {
+			if ($scope.form.$valid) {
+				console.log('next button clicked');
+				$location.path(baseUrl + ($routeParams.section + 1));
+			}
+		};
 
 		console.log($scope.group);
 
