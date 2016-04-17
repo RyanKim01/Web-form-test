@@ -28,8 +28,19 @@ app.controller('I129Ctrl', ['$scope', '$http', 'JSONModelsService', '$routeParam
 		$scope.nextStep = function () {
 			if ($scope.form.$valid) {
 				console.log('next button clicked');
-				$location.path(baseUrl + ($routeParams.section + 1));
+				$routeParams.section++;
+				$location.path(baseUrl + ($routeParams.section));
 			}
+		};
+
+		$scope.previousStep = function () {
+		    if ($scope.form.$valid) {
+		      console.log('previous button clicked');
+		      if ($routeParams.section > 1) {
+						$routeParams.section--;
+						$location.path(baseUrl + ($routeParams.section));
+		    }
+		  }
 		};
 
 		console.log($scope.group);

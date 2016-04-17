@@ -86,9 +86,9 @@
                         },
 												{
                             "id": "4_6_yes_no_question",
-                            "title": "6. Is any beneficiary in this petition in removal proceedings?",
+                            "title": "6. Do you qualify for this?",
                             "type": "checkbox",
-                            "info": "If yes, proceed to Part 9. and list the beneficiary's(ies) name(s).",
+                            "info": "If yes, check yes",
                             "size": {
                                 "width": 100,
                                 "height": 1
