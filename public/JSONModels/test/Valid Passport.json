@@ -87,7 +87,7 @@
 												{
                             "id": "4_6_yes_no_question",
                             "title": "6. Do you qualify for this?",
-                            "type": "checkbox",
+                            "type": "radio",
                             "info": "If yes, check yes",
                             "size": {
                                 "width": 100,

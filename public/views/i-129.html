@@ -4,7 +4,7 @@
 			{{form}}
 			{{formData}}
 		</pre>
-		<div class="" >
+		<div class="">
 			<h2 ng-bind="group.title" style="color:green"></h2>
 			<div class="" ng-repeat="section in group.sections">
 				<div class="" ng-repeat="field in section.fields">
@@ -50,7 +50,7 @@
 					</div>
 
 					<!-- Check box -->
-					<div class="form-group" ng-class="{ 'has-error': form.$submitted && form[field.id].$invalid }" ng-if="field.type === 'checkbox'">
+					<!-- <div class="form-group" ng-class="{ 'has-error': form.$submitted && form[field.id].$invalid }" ng-if="field.type === 'checkbox'">
 						<label for="{{field.id}}">{{field.title}}</label>
 						<br>
 						<label ng-repeat="value in field.values"><input type="checkbox" id="{{field.id}}" name="field.id" ng-model="formData[field.id]"> {{value.title}}</label>
@@ -59,7 +59,23 @@
 						<div ng-show="form.$submitted" ng-cloack>
 							<span class="help-block" ng-show="form['{{field.id}}'].$error.required" ng-if="field.validations.required">Please enter a value, this field is required</span>
 						</div>
+					</div> -->
+
+					<div  class="form-group" ng-class="{ 'has-error': form.$submitted && form[field.id].$invalid }" ng-if="field.type === 'radio'">
+						<label for="{{field.id}}">{{field.title}}</label>
+						<br>
+						<label ng-repeat="value in field.values">
+							<input type="radio" id="{{field.id}}" name="field.id" ng-model="formData[field.id]" value="{{value.id}}">{{value.title}}</label>
+						<p class="form-group-note" ng-if="field.info" ng-bind="field.info"></p>
+
+						<div ng-show="form.$submitted" ng-cloack>
+							<span class="help-block" ng-show="form['{{field.id}}'].$error.required" ng-if="field.validations.required">Please enter a value, this field is required</span>
+						</div>
+
+						Selected Value is : {{formData[field.id]}}
 					</div>
+
+					<!-- Yeah, I totally missed this part. Yes, checkbox is for boolean not for selecting one out of many. I have further questions. 1. Right now the data is being saved as integer (0,1,2). Is there a way to save the selected data as (not selected, yes, no)?   2. When the form is first opened, the first option is initially selected beacuse of `ng-init="formData[field.id]=0"`. I did get rid of this, but it starts selecting the middle one initially. How do I unselect everything initially? -->
 
 					<!-- date -->
 					<div class="form-group" ng-class="{ 'has-error': form.$submitted && form[field.id].$invalid }" ng-if="field.type === 'date'">
