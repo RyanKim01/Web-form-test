@@ -14,8 +14,21 @@ app.controller('I129Ctrl', ['$scope', '$http', 'JSONModelsService', '$routeParam
 
 		$scope.respone = [];
 
+		var parameter = {
+		  "document": {
+		    "title": getDocumentTitle(),
+		    "data": JSON.stringify($scope.formData),
+		    "user_id": $scope.user
+		  }
+		}
+
 		function updateUI() {
 			$scope.group = $scope.response.data.groups[$routeParams.section - 1];
+		}
+
+		function getDocumentTitle() {
+		 var documentTitle = window.location.hash.match(/\/([a-zA-Z\d\-]*)/)[1]
+		 return documentTitle
 		}
 
 		//below is basically equivalent to routing
@@ -26,27 +39,26 @@ app.controller('I129Ctrl', ['$scope', '$http', 'JSONModelsService', '$routeParam
 		});
 
 		$scope.onSave = function () {
-			// $.ajax({
-			// 	type:"POST",
-			// 	beforeSend: function (request){
-			// 		//your token is here
-			// 		request.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr("content"));
-			// 	},
-			// 	url: "http://localhost:3000/documents",
-			// 	dataType : 'json',
-			// 	success : function(response) {
-			// 		console.log(response)
-			// 	}
-			// });
+			console.log($scope.formData);
+
+		$http.post('http://localhost:3000/documents', parameter) // PASS THE DATA AS THE SECOND PARAMETER
+			.success(
+					function(success){
+							console.log("success")
+					})
+			.error(
+					function(error){
+							console.log("error has occurred")
+		});
 
 
-				$http.post('http://localhost:3000/documents', { user: $scope.user, formData: $scope.formData }, function (response) {
-					$scope.isSaved = true;
-					console.log(response);
-					if (response.success) {
-						console.log("It has been successfully saved!")
-					}
-				});
+				// $http.post('http://localhost:3000/documents', { user: $scope.user, formData: formData }, function (response) {
+				// 	$scope.isSaved = true;
+				// 	console.log(response);
+				// 	if (response.success) {
+				// 		console.log("It has been successfully saved!")
+				// 	}
+				// });
 		}
 
 		$scope.nextStep = function () {

@@ -119,32 +119,6 @@ app.controller('MainController', ['$scope', '$http', 'debounce', 'FormDataServic
           $scope.formData = formData;
       });
 
-      // $scope.onSave = function () {
-      //     $http.post('progress-endpoint', { user: $scope.user, formData: $scope.formData }, function (response) {
-      //       $scope.isSaved = true;
-      //       console.log(response);
-      //       if (response.success) {
-      //         // show message to user
-      //       }
-      //     });
-      // }
-
-      // $scope.nextStep = function () {
-      //   if ($scope.form.$valid) {
-      //     console.log('next button clicked');
-      //     $scope.step++;
-      //   }
-      // };
-			//
-      // $scope.previousStep = function () {
-      //     if ($scope.form.$valid) {
-      //       console.log('previous button clicked');
-      //       if ($scope.step > 1) {
-      //       $scope.step--;
-      //     }
-      //   }
-      // };
-
       $scope.saveProgress = debounce(function () {
         console.log('saveProgress');
         FormDataService.save($scope.formData);

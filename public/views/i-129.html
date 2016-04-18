@@ -41,7 +41,7 @@
 						<!-- <label for="{{field.id}}">{{field.title.substr(field.title.indexOf('.') + 2)}}</label><br> -->
 						<label for="{{field.id}}">{{field.title}}</label>
 						<br>
-						<select ng-model="formData[field.id]" ng-options="value as value.title for value in field.values"></select>
+						<select ng-model="formData[field.id]" value="{{value}}" ng-options="value as value.title for value in field.values"></select>
 						<p class="form-group-note" ng-if="field.info" ng-bind="field.info"></p>
 
 						<div ng-show="form.$submitted" ng-cloack>
@@ -65,7 +65,7 @@
 						<label for="{{field.id}}">{{field.title}}</label>
 						<br>
 						<label ng-repeat="value in field.values">
-							<input type="radio" id="{{field.id}}" name="field.id" ng-model="formData[field.id]" value="{{value.id}}">{{value.title}}</label>
+							<input type="radio" id="{{field.id}}" name="field.id" ng-model="formData[field.id]" value="{{value.title}}">{{value.title}}</label>
 						<p class="form-group-note" ng-if="field.info" ng-bind="field.info"></p>
 
 						<div ng-show="form.$submitted" ng-cloack>
